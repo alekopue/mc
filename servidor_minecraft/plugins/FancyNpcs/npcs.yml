@@ -1,0 +1,32 @@
+npcs:
+  ac6e588e-8e5d-47ae-a10e-de8fa785ff84:
+    name: AlekoPue
+    creator: 8f724caa-ab3d-3548-a1f0-3ac4e451e401
+    displayName: Gampi
+    type: PLAYER
+    location:
+      world: home
+      x: 194.45806216501876
+      y: 97.5
+      z: 59.19544559843739
+      yaw: -155.09692
+      pitch: 5.400124
+    showInTab: false
+    spawnEntity: true
+    collidable: true
+    glowing: false
+    glowingColor: white
+    turnToPlayer: true
+    interactionCooldown: 0.0
+    scale: 1.0
+    skin:
+      identifier: xKledz
+      mirrorSkin: false
+    attributes:
+      on_ground: 'false'
+      pose: sitting
+      on_fire: 'true'
+      silent: 'false'
+      shaking: 'false'
+      use_item: main_hand
+    visibility_distance: -1

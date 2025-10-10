@@ -1,0 +1,31 @@
+command /intro <player>:
+    trigger:
+        wait 1 seconds
+        set {_p} to arg-1
+        set {frozen.%{_p}%} to true
+        
+        # Cambiar a espectador (oculta hotbar + HUD)
+        set gamemode of {_p} to spectator
+
+        # Mostrar el título (espera 5 segundos antes)
+        wait 5 seconds
+        send title "&f..." to {_p} for 2 seconds with fade in 10 ticks and fade out 20 ticks
+        wait 5 seconds
+        send title "&fVeo que recien llegaste" to {_p} for 2 seconds with fade in 10 ticks and fade out 20 ticks
+        wait 5 seconds
+        send title "&fBueno es hora de empezar" to {_p} for 2 seconds with fade in 10 ticks and fade out 20 ticks
+        
+        
+
+        # Descongelar y devolver a survival
+        wait 5 seconds
+        delete {frozen.%{_p}%}
+        remove blindness from {_p}
+        set gamemode of {_p} to survival
+        execute {_p} command "warp owner_house"
+        
+
+every tick:
+    loop all players:
+        if {frozen.%loop-player%} is true:
+            teleport loop-player to location of loop-player

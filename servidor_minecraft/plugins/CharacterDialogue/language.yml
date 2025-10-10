@@ -1,0 +1,100 @@
+file-version: '1'
+command-info: <red><bold>> <reset><red>/%command% <yellow>%usage% | <gray>%description%
+select-choice: <green>Click here to select <red>#%str%
+loaded-dialogues: <green>Loaded %s dialogues.
+choice-title: Select an option
+cooldown-message: <red>Calm down.
+choice-timeout: <red>You took a long time to answer
+sneak-continue: '<b>[ Shift para continuar ]'
+choice-select: '<b>[ Presiona <key:key.swapOffhand> para eligir tu respuesta ]'
+general:
+  offline-player: <red>The specified player isn't online.
+  only-player: <red>Only players can execute this command.
+  no-permission: <red>You do not have permissions to execute this command.
+command:
+  usage: '<red><bold>>> <reset><red>Usage<gray>: <green><command> <yellow><args>'
+  reload:
+    error: <red>Error while reloading CharacterDialogue files.
+    success: <green>CharacterDialogue reloaded correctly
+    dialogue-error: <red>Error loading all dialogues
+  clear-cache:
+    no-data: <red>That player doesn't have any data in the memory cache.
+    success: <green>Cleared %s cache!
+  assign:
+    no-dialogue: <red>The dialogue was not found.
+    no-npc: <red>The specified npc was not found.
+    error: <red>Error while saving npc.
+    success: <green>The npc <gray>'%s' <green>was assigned to <red>'%s' <green>dialogue.
+  gui:
+    not-found: <red>No gui has been found with that name.
+    success: '<green>GUI opened: <red>%s'
+  dialogue:
+    not-found: <red>A dialogue with that name was not found.
+    console: <red>You need to specify the target player.
+    success: <green>Started <red>'%s' <green>dialogue for <red>%s<green>.
+    info:
+      title: '<gray><strikethrough>             <reset><gray>[ <aqua>Dialogue Info <gray>]<strikethrough>             '
+      id: '<gold>ID: <green>%s'
+      display-name: '<gold>Display Name: <green>%s'
+      lines: '<gold>Total lines: <green>%s'
+      file: '<gold>File: <green>%s'
+      click-type: '<gold>Click type: <green>%s'
+      persistence:
+        persistent: '<gold>Persistent: <green>%s'
+        total: '<gold>On join lines: <green>%s'
+      first-interaction:
+        lines: '&6First interaction lines: &c%s'
+  group:
+    no-group-specified: <red>You must write the name of the group.
+    already-exists: <red>The group "%s" already exists.
+    created-success: <green>Dialog group <red>"%s" <green>has been created successfully.
+    error: <red>Fatal error while creating "%s" group file.
+  item:
+    no-hand: <red>You must have an item in your main hand.
+    no-id: <red>You must enter the item ID.
+    already-exists: <red>There's already an item with this ID.
+    success: <green>The item <red>'%s' <green>has been successfully saved.
+    not-found: <red>No item was found.
+    give-success: <green>You have obtained the item correctly.
+    deleted: <green>Item <gray>"<red><item><gray>" <green>deleted correctly.
+  method:
+    list-title: '<gray><bold>>>><reset> <green>List of methods:'
+    list-line: <red><bold>> <reset><red>'<green>%s<red>' <green>method
+    invalid-line: '<red>Invalid line provided, structure: <green><method>{<configuration>}: <argument>'
+    no-args: <red>Invalid arguments provided.
+    invalid-method: '<red>Invalid method provided: %s.'
+    on-session: <red>You cant run this command while in a dialogue session.
+    executed: '<green>Method <gray>''%s'' <green>executed correctly with result: <red>%s'
+  record:
+    in-recording: <red>You are already in a recording, use <hover:show_text:'<green>Click here to stop'><click:run_command:/characterd record stop><gold>/characterd record stop</click></hover> <red>to stop it.
+    not-recording: <red>You are not currently on a recording.
+    starting: <green>Starting in %ss
+    replaying: '<green>Starting replay on npc: %s'
+    not-found: <red>Recording not found.
+    no-npc: <red>The NPC specified was not found.
+    already-exists: <red>The recording <gray>'%s' <red>already exists.
+    saved: <green>Recording <red>'%s' <green>has been saved.
+    cancelled: <green>Recording cancelled <red>(not saved)
+    deleted: <green>Successfully deleted <gray>'%s' <green>recording!
+    guide: <gray>Recording started... type <hover:show_text:'<green>Click here to cancel'><click:run_command:/characterdialogue record cancel><gold>/characterdialogue record cancel</click></hover> <gray>to cancel
+    action-bar: <red>[ Press <key:key.swapOffhand> to stop] <seconds>s elapsed
+    view:
+      record: '<gray><bold>>> <reset><yellow>Recording name<white>: <gold><bold>%s'
+      total: '<yellow>Total Points<gray>: <white>%s'
+      first: '<yellow>First Point<gray>: %s'
+      last: '<yellow>Last Point<gray>: %s'
+      duration: '<yellow>Estimated duration<gray>: <green>%s seconds'
+  player-data:
+    invalid: <red>Invalid data has been entered in the command
+    added:
+      dialogue: <green>Successfully added %s to player data
+      firstInteraction: <green>Successfully added %s first-interaction to player data
+      already: <red>The dialog %s is already added.
+    removed:
+      dialogue: <green>Successfully removed %s in player data
+      firstInteraction: <green>Successfully removed %s first-interaction in player data
+      not-present: <red>The "%s" dialog is not in the list.
+    view:
+      title: <gray><bold>>> <reset><gray>[ <gold>Data of <player><gray> ]
+      dialogues: '<gray><bold>> <reset><red>Dialogues<gray>: <dialogues>'
+      first-interactions: '<gray><bold>> <reset><red>First interactions<gray>: <dialogues>'

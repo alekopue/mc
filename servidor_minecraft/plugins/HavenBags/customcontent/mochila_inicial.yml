@@ -1,0 +1,116 @@
+'4':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: CHAINMAIL_HELMET
+  meta:
+    ==: ItemMeta
+    meta-type: ARMOR
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"C","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F9F9"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3F3F3"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EDEDED"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E7E7E7"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E1E1E1"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DCDCDC"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D6D6D6"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D0D0D0"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CACACA"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C4C4C4"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:protection: 2
+      minecraft:unbreaking: 1
+'12':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: STONE_PICKAXE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"P","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F9F9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F2F2F2"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#ECECEC"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E5E5E5"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D8D8D8"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D2D2D2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CBCBCB"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C5C5C5"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:efficiency: 1
+      minecraft:unbreaking: 1
+'13':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: CHAINMAIL_CHESTPLATE
+  meta:
+    ==: ItemMeta
+    meta-type: ARMOR
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"P","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F9F9"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F2F2F2"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#ECECEC"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E5E5E5"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D8D8D8"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D2D2D2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CBCBCB"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C5C5C5"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:protection: 2
+      minecraft:unbreaking: 1
+'14':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: STONE_SHOVEL
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"P","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F9F9"},{"text":"l","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F2F2F2"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#ECECEC"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E5E5E5"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D8D8D8"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D2D2D2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CBCBCB"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C5C5C5"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:efficiency: 1
+      minecraft:unbreaking: 1
+'20':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: STONE_AXE
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"H","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F9F9F9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F3F3F3"},{"text":"h","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EDEDED"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E7E7E7"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E1E1E1"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DCDCDC"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D6D6D6"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D0D0D0"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CACACA"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C4C4C4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:efficiency: 1
+      minecraft:unbreaking: 1
+'22':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: CHAINMAIL_LEGGINGS
+  meta:
+    ==: ItemMeta
+    meta-type: ARMOR
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"G","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"r","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FAFAFA"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F5F5F5"},{"text":"b","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F0F0F0"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EBEBEB"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E6E6E6"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E1E1E1"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DCDCDC"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D7D7D7"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D2D2D2"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CDCDCD"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C8C8C8"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C3C3C3"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:protection: 2
+      minecraft:unbreaking: 1
+'24':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: STONE_SWORD
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"E","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FAFAFA"},{"text":"p","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F4F4F4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EFEFEF"},{"text":"d","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E9E9E9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E4E4E4"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D9D9D9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D4D4D4"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CECECE"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C9C9C9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C3C3C3"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:sharpness: 1
+      minecraft:unbreaking: 1
+'31':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: CHAINMAIL_BOOTS
+  meta:
+    ==: ItemMeta
+    meta-type: ARMOR
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"B","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FAFAFA"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F4F4F4"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EFEFEF"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E9E9E9"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E4E4E4"},{"text":"B","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D9D9D9"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D4D4D4"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CECECE"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C9C9C9"},{"text":"a","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C3C3C3"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchants:
+      minecraft:protection: 2
+      minecraft:unbreaking: 1
+'40':
+  ==: org.bukkit.inventory.ItemStack
+  v: 4189
+  type: COOKED_BEEF
+  amount: 16
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: '{"text":"","extra":[{"text":"L ","strikethrough":false,"obfuscated":true,"bold":false,"italic":false,"underlined":false,"color":"white"},{"text":"B","obfuscated":false,"bold":true,"italic":false,"color":"white"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#FAFAFA"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#F4F4F4"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#EFEFEF"},{"text":"e","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E9E9E9"},{"text":"c","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#E4E4E4"},{"text":"s","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#DFDFDF"},{"text":"i","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D9D9D9"},{"text":"t","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#D4D4D4"},{"text":"o","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#CECECE"},{"text":"
+      ","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C9C9C9"},{"text":":","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#C3C3C3"},{"text":"3","strikethrough":false,"obfuscated":false,"bold":true,"italic":false,"underlined":false,"color":"#BEBEBE"},{"text":"
+      ","bold":false,"italic":false},{"text":"L","obfuscated":true,"italic":false,"color":"white"}]}'
+    enchantment-glint-override: true

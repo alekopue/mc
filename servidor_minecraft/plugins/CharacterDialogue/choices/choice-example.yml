@@ -1,0 +1,30 @@
+choices:
+  owner:
+    message: '<white><b>¿Cuantas experiencia tienes en esta modalidad/servidores?</b>'
+    nada:
+      type: continue
+      message: "<white><b>No tengo experiencia</b>"
+    mucha:
+      type: start_dialogue
+      message: '<red><b>Mucha, no necesito tu ayuda</b>'
+      argument: 'owner_no'
+      
+  owner_preguntas:
+    message: Elige una opcion
+    que_eres:
+      type: start_dialogue
+      message: 'Que es lo que eres?'
+      argument: 'owner_que_eres'
+    porque_creaste:
+      type: start_dialogue
+      message: 'Porque creaste este mundo?'
+      argument: 'owner_porque_creaste'
+    gustos:
+      type: start_dialogue
+      message: 'Que es lo que mas te gusta?'
+      argument: 'owner_gustos'
+    error:
+      type: start_dialogue
+      message: 'Me movi en el teletransporte me ayudas?'
+      argument: 'owner_error'
+  

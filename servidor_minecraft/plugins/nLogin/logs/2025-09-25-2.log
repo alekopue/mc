@@ -1,0 +1,17 @@
+[2025/09/25 06:50:09]: §9          __             _       
+[2025/09/25 06:50:09]: §9  _ __   / /  ___   __ _(_)_ __  
+[2025/09/25 06:50:09]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/09/25 06:50:09]: §9 | | | / /__| (_) | (_| | | | | |
+[2025/09/25 06:50:09]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2025/09/25 06:50:09]: §9                  |___/            
+[2025/09/25 06:50:09]: §9 By: www.nickuc.com - V 10.4.23 DEVELOPMENT
+[2025/09/25 06:50:09]: §9 
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] All settings were loaded in 81 ms.
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] Loading the messages_es.yml message file...
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] All plugin messages were loaded in 42 ms (languageByClient=false).
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] All proxy settings were loaded in 1 ms.
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] Loading database...
+[2025/09/25 06:50:10]: §3[nLogin] [DEBUG] Starting logger filter...
+[2025/09/25 06:52:19]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'AlekoPue', `unique_id` = 8f724caaab3d3548a1f03ac4e451e401,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$T9SoAgDehOdZ10uBBlixUuEzJqrqnJrfL9uN1qj1qVXEnjZXqkUfW', `last_ip` = '38.250.152.80', `creation_date` = 2025-09-22 13:52:36.946, `last_seen` = 2025-09-25 06:52:19.153, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"es","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/25 06:52:19]: [nLogin] The user AlekoPue has successfully logged in.
+[2025/09/25 07:12:40]: [nLogin] Successful plugin core shutdown (took 0.00s)

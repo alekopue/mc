@@ -1,0 +1,83 @@
+command: comandos
+permission: comandos.perm
+Title: '§x§F§F§F§F§F§F§lC§x§F§B§F§B§F§B§lo§x§F§6§F§6§F§6§lm§x§F§2§F§2§F§2§la§x§E§E§E§E§E§E§ln§x§E§9§E§9§E§9§ld§x§E§5§E§5§E§5§lo§x§E§1§E§1§E§1§ls§x§D§C§D§C§D§C§l §x§D§8§D§8§D§8§lB§x§D§4§D§4§D§4§la§x§C§F§C§F§C§F§ls§x§C§B§C§B§C§B§li§x§C§7§C§7§C§7§lc§x§C§2§C§2§C§2§lo§x§B§E§B§E§B§E§ls'
+Author: AlekoPue
+pages:
+  '1':
+  - '&6Comandos Basicos:'
+  - ' '
+  - '&c{tpa}'
+  - '&c{tpahere}'
+  - '&c{tpayes/no}'
+  - '&c{tpacancel}'
+  - '&c{rtp}'
+  - '&c{warp}'
+  - '&c{spawn}'
+  - '&c{sethome}'
+  - '&c{delhome}'
+  - '&c{home}'
+  - '&c{homes}'
+  - '&c{movehome}'
+  '2':
+  - '&6Comandos Basicos:'
+  - ' '
+  - '&c{balance}'
+  - '&c{balance_other}'
+  - '&c{pay}'
+  - '&c{balancetop}'
+  - '&c{paytoggle}'
+
+tpa:
+  TEXT: '- /tpa <jugador>'
+  HOVER_TEXT: 'solicitar un teletransporte a otro jugador'
+tpahere:
+  TEXT: '- /tpahere <jugador>'
+  HOVER_TEXT: 'solicitar un teletransporte hacia a ti, a otro jugador'
+tpayes/no:
+  TEXT: '- /tpayes o /tpano'
+  HOVER_TEXT: 'aceptar o denegar un tp'
+tpacancel:
+  TEXT: '- /tpacancel'
+  HOVER_TEXT: 'cancelar una solicitud de tpa'
+rtp:
+  TEXT: '- /rtp'
+  HOVER_TEXT: 'realiza un teletransporte aleatorio'
+warp:
+  TEXT: '- /warp <lugar>'
+  HOVER_TEXT: 'realiza un teletransporte a una ubicacion designada'
+spawn:
+  TEXT: '- /spawn'
+  HOVER_TEXT: 'realiza un teletransporte al spawn del servidor'
+sethome:
+  TEXT: '- /sethome <nombre>'
+  HOVER_TEXT: 'crea un home al cual podras teletransportarte'
+delhome:
+  TEXT: '- /delhome <nombre>'
+  HOVER_TEXT: 'elimina un home'
+home:
+  TEXT: '- /home <nombre>'
+  HOVER_TEXT: 'realiza un teletransporte a un home'
+homes:
+  TEXT: '- /homes'
+  HOVER_TEXT: 'la lista de tus homes'
+movehome:
+  TEXT: '- /movehome <nombre>'
+  HOVER_TEXT: 'mueve una de tus homes a otra ubicacion'
+balance:
+  TEXT: '- /balance'
+  HOVER_TEXT: 'Muestra tu balance actual.'
+balance_other:
+  TEXT: '- /balance <jugador>'
+  HOVER_TEXT: 'Muestra el balance de otro jugador.'
+pay:
+  TEXT: '- /pay <jugador> <N>'
+  HOVER_TEXT: 'Envía dinero a otro jugador.'
+balancetop:
+  TEXT: '- /balancetop'
+  HOVER_TEXT: 'Muestra el ranking de los jugadores con más dinero.'
+paytoggle:
+  TEXT: '- /paytoggle'
+  HOVER_TEXT: 'Activa o desactiva que otros jugadores puedan pagarte.'
+
+  
+

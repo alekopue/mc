@@ -1,0 +1,206 @@
+dialogue:
+  owner:
+    click: RIGHT
+    display-name: '<dark_red><b>AlekoPue</b></dark_red>'
+    slow-effect: false
+    first-interaction:
+    # Empieza la primera interaccion (Se cierra la scoreboard:[linea 8], Se inmoviliza al jugador:[linea 9], Se crea un npc exclusivo para el jugador y se da la accion de mirar al jugador al npc[linea 10,11])
+    - 'command{sender=console}: tab scoreboard off %player_name%'
+    - 'effect{seconds=99999, amplifier=255}: slowness' 
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'npc_control{action=teleport, x=194.665, y=97, z=58.369, lookPlayer=true, npcId=AlekoPue}'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Un nuevo jugador, realmente no crei que alguien mas entraria'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>eres bastante suertudo ;3'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>que te parece si conversamos pero adentro de mi casa?'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>llevo eones sentado en el frio, sigueme va xd?'
+    - 'wait: 2'
+    - 'title{title="<white><b>Presiona Shift", subtitle="<white>para continuar", stay=1}'
+    - 'waitsneak'
+    - 'effect{clear=true}: slowness'
+    - 'wait: 2'
+    - 'npc_control{action=record, record=casa1, npcId=AlekoPue}'
+    - 'wait: 8'
+    # Termina la primera interaccion (Se quita el efecto de inmovilizacion al jugador[linea 23],) -> Procede a ingresar a la casa (Se activa moviemiento del npc [linea 25])
+    
+
+    # Adentro de la casa (Se le da la accion de ver al jugador al npc[linea 31], Se inmoviliza al jugador:[linea 32])
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'wait: 1'
+    - 'title{title="<white><b>Presiona Shift", subtitle="<white>para continuar", stay=1}'
+    - 'waitsneak'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Bueno dime conoces algo de este servidor?'
+    - 'wait: 2'
+    - 'title{title="<white><b>Elige una opcion", subtitle="<white>Scroll para elegir y F para seleccionar", stay=2}'
+    - 'effect{clear=true}: slowness'
+    - 'choice: owner'
+    - 'wait: 2'
+    # Se da la opcion al jugador de elegir
+
+    # Si eliges "no" se ejecutara el siguiente dialogo:
+
+    # Jugador recibe dinero:
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Era de esperar, yo te dare lo basico no te preocupes'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>primero dinero'
+    - 'wait: 2'
+    - 'command{sender=console}: eco give %player_name% 1000'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>algo de dinero nunca esta mal verdad?'
+    - 'wait: 2'
+    - 'effect{clear=true}: slowness'
+    - 'title{title="<white><b>Presiona Shift", subtitle="<white>para continuar", stay=1}'
+    - 'waitsneak'
+    - 'wait: 1'
+    # Jugador termina de recibir dinero:
+
+    # Jugador recibe mochila con herramientas:
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Sin herramientas? no problem, tronaria los dedos pero no tengo asi que...'
+    - 'wait: 2'
+    - 'command{sender=console}: si give kit_basico 1 %player_name%'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>solo ya sabes, abrelo supongo'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>cuando termines me dices para continuar'
+    - 'wait: 2'
+    - 'effect{clear=true}: slowness'
+    - 'title{title="<white><b>Presiona Shift", subtitle="<white>para continuar", stay=1}'
+    - 'waitsneak'
+    - 'wait: 1'
+    # Jugador termina de recibir mochila con herramientas:
+
+    # Jugador recibe libro con comandos:
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>bueno eso esto todo..., no espera casi me olvido'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>existen ciertos conjuros los cuales debes aprender'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>algunos los llaman comandos pero creo que estan locos XD'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>igual te serviran a lo largo de aventura, leelos'
+    - 'wait: 2'
+    - 'command{sender=console}: vb give comandos.yml %player_name%'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>ojo cuidado solo son los mas basicos'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>cuando cree otro te aviso o no quien sabe es cansado ser dios'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>igualmente deje a algunos personajes por ahi tirados...'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>si ellos te ayudaran a lo largo de tu viaje, estaran en el spawn'
+    - 'wait: 2'
+    - 'effect{clear=true}: slowness'
+    - 'title{title="<white><b>Presiona Shift", subtitle="<white>para continuar", stay=1}'
+    - 'waitsneak'
+    - 'wait: 1'
+    # Jugador termina de recibir libro con comandos:
+
+    # Despedida y teleport a lobby:
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>un gusto conocerte y recuerda siempre estare dispuesto a ayudar'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>cuidate y que empieze tu aventura'
+    - 'wait: 2'
+    - 'effect{clear=true}: slowness'
+    - 'command{sender=console}: mvtp %player_name% e:lobby:74.50,156.00,-60.50:-0.60:0.60 --unsafe' 
+    - 'command{sender=console}: tab:tab scoreboard on %player_name%'
+    - 'wait: 1'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'
+    # Fin del dialogo 
+
+    dialog:
+    - 'command{sender=console}: tab scoreboard off %player_name%'
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'npc_control{action=teleport, x=194.665, y=97, z=58.369, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Realmente es cansado tener que levantarme de la silla'
+    - 'wait: 2'
+    - 'title{title="<white><b>Elige una opcion", subtitle="<white>Scroll para elegir y F para seleccionar", stay=2}'
+    - 'effect{clear=true}: slowness'
+    - 'choice: owner_preguntas'
+    - 'wait: 1'
+
+  owner_no:
+    click: RIGHT
+    display-name: '<dark_red><b>AlekoPue</b></dark_red>'
+    slow-effect: false
+    dialog:
+    - 'npc_control{action=start, npcId=AlekoPue}'
+    - 'npc_control{action=teleport, x=181.605, y=98.06250, z=56.699, lookPlayer=true, npcId=AlekoPue}'
+    - 'effect{seconds=99999, amplifier=255}: slowness'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<dark_red><b>ERROR'
+    - 'wait: 1'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<dark_red><b>ERROR ERROR'
+    - 'wait: 1'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<dark_red><b>ERROR ERROR ERROR'
+    - 'wait: 1'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Bueno tu te lo pierdes proplayer, te quedaste sin dinero y kit inicial'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}:<white><b>Adios tonto >:(('
+    - 'wait: 2'
+    - 'effect{clear=true}: slowness'
+    - 'command{sender=console}: mvtp %player_name% e:lobby:74.50,156.00,-60.50:-0.60:0.60 --unsafe'
+    - 'command{sender=console}: tab:tab scoreboard on %player_name%' 
+    - 'wait: 4'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'
+  
+  owner_que_eres:
+    click: RIGHT
+    display-name: AlekoPue
+    slow-effect: false
+    dialog:
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> soy solo un dios cansado de crear y destruir'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> o solo tal vez, un simple programador'
+    - 'wait: 2'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'
+  owner_porque_creaste:
+    click: RIGHT
+    display-name: AlekoPue
+    slow-effect: false
+    dialog:
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> cree esta realidad por mero entretenimiento'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> es lo que hace uno cuando esta aburrido'
+    - 'wait: 2'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'
+  owner_gustos:
+    click: RIGHT
+    display-name: AlekoPue
+    slow-effect: false
+    dialog:
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> lo que mas me gusta de este mundo es un secreto,no se lo digas a nadie'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> me gusta una chica llamada cereza, es lindisima uwu'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> si la encuentras dile que me busque :3'
+    - 'wait: 2'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'
+  owner_error:
+    click: RIGHT
+    display-name: AlekoPue
+    slow-effect: false
+    dialog:
+    - 'npc_control{action=start, npcId=AlekoPue}' 
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> si me imagino, realmente no lees los titulos no?'
+    - 'wait: 2'
+    - 'talk{type=action_bar,sound=UI.BUTTON.CLICK, volume=0.2, pitch=0.2, tickSpeed=1, skip:true}: <white> bueno ya te teletransporto'
+    - 'wait: 2'
+    - 'command{sender=player}: spawn %player_name%'
+    - 'wait: 2'
+    - 'npc_control{action=destroy, npcId=AlekoPue}'

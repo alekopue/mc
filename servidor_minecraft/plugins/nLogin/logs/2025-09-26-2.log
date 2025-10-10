@@ -1,0 +1,45 @@
+[2025/09/26 04:03:48]: §9          __             _       
+[2025/09/26 04:03:48]: §9  _ __   / /  ___   __ _(_)_ __  
+[2025/09/26 04:03:48]: §9 | '_ \ / /  / _ \ / _` | | '_ \ 
+[2025/09/26 04:03:48]: §9 | | | / /__| (_) | (_| | | | | |
+[2025/09/26 04:03:48]: §9 |_| |_\____/\___/ \__, |_|_| |_|
+[2025/09/26 04:03:48]: §9                  |___/            
+[2025/09/26 04:03:48]: §9 By: www.nickuc.com - V 10.4.23 DEVELOPMENT
+[2025/09/26 04:03:48]: §9 
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] All settings were loaded in 80 ms.
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] Loading the messages_es.yml message file...
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] All plugin messages were loaded in 45 ms (languageByClient=false).
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] All proxy settings were loaded in 1 ms.
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] Loading database...
+[2025/09/26 04:03:48]: §3[nLogin] [DEBUG] Starting logger filter...
+[2025/09/26 04:05:13]: §4[nLogin] [ERROR] §cUnable to verify that the player is an NPC. Most likely this is a Citizens error.
+java.lang.NoClassDefFoundError: net/citizensnpcs/api/CitizensAPI
+	at com.nickuc.login.ςμκΔΣιζρΛξΨιθφΠ.b(:23)
+	at com.nickuc.login.ΩιιφΔβχυ.c(:125)
+	at com.nickuc.login.ηεΨχΩνμψφ.a(:60)
+	at co.aikar.timings.TimedEventExecutor.execute(TimedEventExecutor.java:80)
+	at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:70)
+	at io.papermc.paper.plugin.manager.PaperEventManager.callEvent(PaperEventManager.java:54)
+	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.callEvent(PaperPluginManagerImpl.java:131)
+	at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:628)
+	at net.minecraft.server.players.PlayerList.canPlayerLogin(PlayerList.java:672)
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.verifyLoginAndFinishConnectionSetup(ServerLoginPacketListenerImpl.java:228)
+	at net.minecraft.server.network.ServerLoginPacketListenerImpl.tick(ServerLoginPacketListenerImpl.java:115)
+	at net.minecraft.network.Connection.tick(Connection.java:607)
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:256)
+	at net.minecraft.server.MinecraftServer.tickConnection(MinecraftServer.java:1762)
+	at net.minecraft.server.dedicated.DedicatedServer.tickConnection(DedicatedServer.java:427)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1738)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:1529)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1251)
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:310)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: java.lang.ClassNotFoundException: net.citizensnpcs.api.CitizensAPI
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:445)
+	at nLogin.jar//com.nickuc.login.loader.MemClassLoader.findClass(MemClassLoader.java:56)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:593)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)
+	... 20 more
+[2025/09/26 04:05:18]: §3[nLogin] [DEBUG] [SQLite] [UPDATE]: "UPDATE `nlogin` SET `last_name` = 'AlekoPue', `unique_id` = 8f724caaab3d3548a1f03ac4e451e401,  `mojang_id` = null,  `bedrock_id` = null,  `password` = '$2a$10$T9SoAgDehOdZ10uBBlixUuEzJqrqnJrfL9uN1qj1qVXEnjZXqkUfW', `last_ip` = '38.250.152.80', `creation_date` = 2025-09-22 13:52:36.946, `last_seen` = 2025-09-26 04:05:18.647, `email` = null, `discord` = null, `settings` = '{"settings":[{"value":"es","key":"language"}],"version":0}' WHERE `ai` = 1" (applied to [last_ip, last_seen, settings] columns)
+[2025/09/26 04:05:18]: [nLogin] The user AlekoPue has successfully logged in.
+[2025/09/26 04:09:34]: [nLogin] Successful plugin core shutdown (took 0.00s)

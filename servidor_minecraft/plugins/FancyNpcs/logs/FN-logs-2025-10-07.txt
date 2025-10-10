@@ -1,0 +1,2 @@
+{"loggerName":"FancyNpcs","logLevel":"WARN","message":"You are not using the latest version of the FancyNpcs plugin.","timestamp":1759815442738,"threadID":149,"threadName":"Thread-24","properties":{}}
+{"loggerName":"FancyNpcs","logLevel":"INFO","message":"FancyNpcs (2.4.1) has been enabled.","timestamp":1759815443296,"threadID":59,"threadName":"Server thread","properties":{}}
