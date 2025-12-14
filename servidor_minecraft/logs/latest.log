@@ -1,0 +1,269 @@
+[07:25:35] [ServerMain/INFO]: [bootstrap] Running Java 21 (OpenJDK 64-Bit Server VM 21.0.9+10-Ubuntu-124.04; Ubuntu null) on Linux 6.8.0-1030-azure (amd64)
+[07:25:35] [ServerMain/INFO]: [bootstrap] Loading Paper 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) for Minecraft 1.21.4
+[07:25:35] [ServerMain/INFO]: [PluginInitializerManager] Initializing plugins...
+[07:25:36] [ServerMain/INFO]: [PluginInitializerManager] Initialized 12 plugins
+[07:25:36] [ServerMain/INFO]: [PluginInitializerManager] Bukkit plugins (12):
+ - AdvancedChat (1.9.10), ClanForge (2.1.9), InventoryRollbackPlus (1.7.8), LuckPerms (5.5.18), PlaceholderAPI (2.11.6), ProtocolLib (5.4.0), SkinsRestorer (15.9.0), TAB (5.3.2), UnlimitedNameTags (1.6.9), Vault (1.7.3-b131), XConomy (2.26.3), packetevents (2.9.4)
+[07:25:43] [ServerMain/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:25:46] [ServerMain/INFO]: Loaded 1370 recipes
+[07:25:46] [ServerMain/INFO]: Loaded 1481 advancements
+[07:25:46] [ServerMain/INFO]: [MCTypeRegistry] Initialising converters for DataConverter...
+[07:25:46] [ServerMain/INFO]: [MCTypeRegistry] Finished initialising converters for DataConverter in 344.2ms
+[07:25:46] [Server thread/INFO]: Starting minecraft server version 1.21.4
+[07:25:46] [Server thread/INFO]: Loading properties
+[07:25:47] [Server thread/INFO]: This server is running Paper version 1.21.4-232-ver/1.21.4@12d8fe0 (2025-06-09T10:15:42Z) (Implementing API version 1.21.4-R0.1-SNAPSHOT)
+[07:25:47] [Server thread/INFO]: [spark] This server bundles the spark profiler. For more information please visit https://docs.papermc.io/paper/profiling
+[07:25:47] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[07:25:47] [Server thread/INFO]: Using 4 threads for Netty based IO
+[07:25:48] [Server thread/INFO]: [MoonriseCommon] Paper is using 1 worker threads, 1 I/O threads
+[07:25:48] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using population gen parallelism: true
+[07:25:49] [Server thread/INFO]: Default game type: SURVIVAL
+[07:25:49] [Server thread/INFO]: Generating keypair
+[07:25:49] [Server thread/INFO]: Starting Minecraft server on *:25565
+[07:25:49] [Server thread/INFO]: Using epoll channel type
+[07:25:49] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[07:25:49] [Server thread/INFO]: Paper: Using OpenSSL 3.x.x (Linux x86_64) cipher from Velocity.
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loading 1 libraries... please wait
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loaded library /workspaces/mc/servidor_minecraft/libraries/redis/clients/jedis/4.3.1/jedis-4.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/json/json/20220320/json-20220320.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [XConomy] Loaded library /workspaces/mc/servidor_minecraft/libraries/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loading 1 libraries... please wait
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/openjdk/nashorn/nashorn-core/15.3/nashorn-core-15.3.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/ow2/asm/asm/7.3.1/asm-7.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/ow2/asm/asm-commons/7.3.1/asm-commons-7.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/ow2/asm/asm-analysis/7.3.1/asm-analysis-7.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/ow2/asm/asm-tree/7.3.1/asm-tree-7.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [AdvancedChat] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/ow2/asm/asm-util/7.3.1/asm-util-7.3.1.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [UnlimitedNameTags] Loading 2 libraries... please wait
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [UnlimitedNameTags] Loaded library /workspaces/mc/servidor_minecraft/libraries/net/jodah/expiringmap/0.5.11/expiringmap-0.5.11.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [UnlimitedNameTags] Loaded library /workspaces/mc/servidor_minecraft/libraries/org/apache/commons/commons-jexl3/3.4.0/commons-jexl3-3.4.0.jar
+[07:25:50] [Server thread/INFO]: [SpigotLibraryLoader] [UnlimitedNameTags] Loaded library /workspaces/mc/servidor_minecraft/libraries/commons-logging/commons-logging/1.3.2/commons-logging-1.3.2.jar
+[07:25:50] [Server thread/INFO]: [LuckPerms] Loading server plugin LuckPerms v5.5.18
+[07:25:51] [Server thread/INFO]: [LuckPerms] Loading configuration...
+[07:25:51] [Server thread/INFO]: [ProtocolLib] Loading server plugin ProtocolLib v5.4.0
+[07:25:51] [Server thread/INFO]: [Vault] Loading server plugin Vault v1.7.3-b131
+[07:25:51] [Server thread/INFO]: [PlaceholderAPI] Loading server plugin PlaceholderAPI v2.11.6
+[07:25:51] [Server thread/INFO]: [packetevents] Loading server plugin packetevents v2.9.4
+[07:25:53] [Server thread/INFO]: [ClanForge] Loading server plugin ClanForge v2.1.9
+[07:25:53] [Server thread/INFO]: [InventoryRollbackPlus] Loading server plugin InventoryRollbackPlus v1.7.8
+[07:25:53] [Server thread/INFO]: [XConomy] Loading server plugin XConomy v2.26.3
+[07:25:53] [Server thread/INFO]: [SkinsRestorer] Loading server plugin SkinsRestorer v15.9.0
+[07:25:53] [Server thread/INFO]: [TAB] Loading server plugin TAB v5.3.2
+[07:25:53] [Server thread/INFO]: [AdvancedChat] Loading server plugin AdvancedChat v1.9.10
+[07:25:53] [Server thread/INFO]: [UnlimitedNameTags] Loading server plugin UnlimitedNameTags v1.6.9
+[07:25:53] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[07:25:53] [Server thread/INFO]: [LuckPerms] Enabling LuckPerms v5.5.18
+[07:25:53] [Server thread/INFO]:         __    
+[07:25:53] [Server thread/INFO]:   |    |__)   LuckPerms v5.5.18
+[07:25:53] [Server thread/INFO]:   |___ |      Running on Bukkit - Paper
+[07:25:53] [Server thread/INFO]: 
+[07:25:54] [Server thread/INFO]: [LuckPerms] Loading storage provider... [H2]
+[07:25:54] [Server thread/INFO]: [LuckPerms] Loading internal permission managers...
+[07:25:54] [Server thread/INFO]: [LuckPerms] Performing initial data load...
+[07:25:55] [Server thread/INFO]: [LuckPerms] Successfully enabled. (took 2201ms)
+[07:25:55] [Server thread/INFO]: [ProtocolLib] Enabling ProtocolLib v5.4.0
+[07:25:55] [Server thread/INFO]: [Vault] Enabling Vault v1.7.3-b131
+[07:25:55] [Server thread/INFO]: [Vault] [Permission] SuperPermissions loaded as backup permission system.
+[07:25:55] [Server thread/INFO]: [Vault] Enabled Version 1.7.3-b131
+[07:25:55] [Server thread/INFO]: [LuckPerms] Registered Vault permission & chat hook.
+[07:25:55] [Server thread/INFO]: [XConomy] Enabling XConomy v2.26.3
+[07:25:55] [Server thread/INFO]: [XConomy] UUID-Mode: Default
+[07:25:55] [Server thread/INFO]: [XConomy] Language: SPANISH
+[07:25:55] [Server thread/INFO]: [XConomy] Modo de guardado - SQLite
+[07:25:56] [Server thread/INFO]: [XConomy] Conectado con SQLite
+[07:25:56] [Server thread/INFO]: [XConomy] XConomy está habilitado
+[07:25:56] [Server thread/INFO]: [XConomy] Encontrado PlaceholderAPI
+[07:25:56] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: xconomy [2.26.3]
+[07:25:56] [Server thread/INFO]: [XConomy] PlaceholderAPI successfully hooked
+[07:25:56] [Server thread/INFO]: [XConomy] ===== YiC =====
+[07:25:56] [Server thread/INFO]: [SkinsRestorer] Enabling SkinsRestorer v15.9.0
+[07:25:56] [Folia Async Scheduler Thread #0/INFO]: [XConomy] Es la version mas nueva
+[07:25:57] [Server thread/INFO]: [SkinsRestorer] Running on Minecraft 1.21.4.
+[07:25:58] [Server thread/INFO]: [SkinsRestorer] Using paper join listener!
+[07:25:58] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: skinsrestorer [15.9.0]
+[07:25:58] [Server thread/INFO]: [SkinsRestorer] PlaceholderAPI expansion registered!
+[07:25:58] [Server thread/WARN]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[07:25:58] [Server thread/WARN]: The server will make no attempt to authenticate usernames. Beware.
+[07:25:58] [Server thread/WARN]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[07:25:58] [Server thread/WARN]: To change this, set "online-mode" to "true" in the server.properties file.
+[07:25:58] [Server thread/INFO]: Preparing level "world"
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     +==================+
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |   SkinsRestorer  |
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |------------------|
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     |  Standalone Mode |
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     +==================+
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     Version: 15.9.0
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     Commit: 1565b8f
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer]     A new version (15.9.1) is available! Downloading update...
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] ----------------------------------------------
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] Do you have issues? Read our troubleshooting guide: https://skinsrestorer.net/docs/troubleshooting
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] Want to support SkinsRestorer? Consider donating: https://skinsrestorer.net/donate
+[07:25:58] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] [GitHubUpdate] Downloading update...
+[07:25:59] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] [GitHubUpdate] Downloaded update in 584ms
+[07:25:59] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] [GitHubUpdate] Update saved as SkinsRestorer.jar
+[07:25:59] [Folia Async Scheduler Thread #2/INFO]: [SkinsRestorer] [GitHubUpdate] The update will be loaded on the next server restart
+[07:25:59] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[07:26:00] [Server thread/INFO]: Preparing spawn area: 0%
+[07:26:00] [Server thread/INFO]: Preparing spawn area: 2%
+[07:26:01] [Server thread/INFO]: Preparing spawn area: 2%
+[07:26:01] [Server thread/INFO]: Preparing spawn area: 2%
+[07:26:01] [Server thread/INFO]: Preparing spawn area: 2%
+[07:26:02] [Server thread/INFO]: Time elapsed: 2301 ms
+[07:26:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[07:26:02] [Server thread/INFO]: Preparing spawn area: 0%
+[07:26:02] [Server thread/INFO]: Preparing spawn area: 67%
+[07:26:02] [Server thread/INFO]: Time elapsed: 540 ms
+[07:26:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[07:26:02] [Server thread/INFO]: Preparing spawn area: 0%
+[07:26:02] [Server thread/INFO]: Time elapsed: 219 ms
+[07:26:02] [Server thread/INFO]: [PlaceholderAPI] Enabling PlaceholderAPI v2.11.6
+[07:26:03] [Server thread/INFO]: [PlaceholderAPI] Fetching available expansion information...
+[07:26:03] [Server thread/INFO]: [packetevents] Enabling packetevents v2.9.4
+[07:26:03] [packetevents-update-check-thread/INFO]: [packetevents] Checking for updates, please wait...
+[07:26:03] [Server thread/INFO]: [ClanForge] Enabling ClanForge v2.1.9
+[07:26:03] [packetevents-update-check-thread/INFO]: [packetevents] There is an update available for PacketEvents! Your build: (2.9.4) | Latest release: (2.11.0)
+[07:26:03] [Server thread/INFO]: [ClanForge] Using storage method: JSON
+[07:26:03] [Server thread/INFO]: [ClanForge] JSON storage initialized successfully.
+[07:26:03] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: clans [1.6]
+[07:26:03] [Server thread/INFO]: [InventoryRollbackPlus] Enabling InventoryRollbackPlus v1.7.8
+[07:26:03] [Server thread/INFO]: [InventoryRollbackPlus] Attempting support for version: 1.21.4-232-12d8fe0 (MC: 1.21.4)
+[07:26:03] [Server thread/INFO]: [InventoryRollbackPlus] Using CraftBukkit version: v1_21_R3
+[07:26:03] [Server thread/INFO]: [InventoryRollbackPlus] Inventory backup data is set to save to: YAML
+[07:26:03] [Server thread/INFO]: [InventoryRollbackPlus] bStats are enabled
+[07:26:04] [Server thread/INFO]: [InventoryRollbackPlus] Tests completed: 5, Skipped: 0, Failed: 0
+[07:26:04] [Server thread/INFO]: [InventoryRollbackPlus] All tests passed successfully.
+[07:26:04] [Server thread/INFO]: [TAB] Enabling TAB v5.3.2
+[07:26:04] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "header" defined for group "example_group". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[07:26:04] [Server thread/INFO]: [TAB] [WARN] [groups.yml] Unknown property "footer" defined for group "example_group". Valid properties: [tagprefix, tagsuffix, tabprefix, customtabname, tabsuffix]
+[07:26:05] [Server thread/INFO]: [TAB] [WARN] Found a total of 2 issues.
+[07:26:05] [Server thread/INFO]: [TAB] Enabled in 788ms
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Enabling AdvancedChat v1.9.10
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Loaded 18 chat colors
+[07:26:05] [Server thread/INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Loaded 21 tags
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Loading chat rules...
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Registered similarity chat rule
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Registered advertising chat rule
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Registered spam chat rule
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Registered caps chat rule
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Registered emojis chat rule
+[07:26:05] [Server thread/INFO]: [AdvancedChat] Loaded 5 chat rules
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered vip+ chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered owner chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered vip++ chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered titan chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered revian chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered default chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered vip chat format
+[07:26:06] [Server thread/INFO]: [AdvancedChat] Registered overlord chat format
+[07:26:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: advancedchat [1.0.0]
+[07:26:07] [Server thread/INFO]: [UnlimitedNameTags] Enabling UnlimitedNameTags v1.6.9
+[07:26:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: unt [1.6.9]
+[07:26:07] [Server thread/INFO]: [PlaceholderAPI] Successfully registered internal expansion: unt [1.6.9]
+[07:26:08] [Server thread/INFO]: [UnlimitedNameTags] Paper found, using Paper's tracker
+[07:26:08] [Server thread/INFO]: [UnlimitedNameTags] PacketEvents found, hooking into it
+[07:26:08] [Server thread/INFO]: [UnlimitedNameTags] API registered
+[07:26:08] [Server thread/INFO]: [UnlimitedNameTags] UnlimitedNameTags has been enabled!
+[07:26:08] [Server thread/INFO]: [spark] Starting background profiler...
+[07:26:09] [Server thread/INFO]: [PlaceholderAPI] Placeholder expansion registration initializing...
+[07:26:09] [Server thread/INFO]: Done preparing level "world" (10.549s)
+[07:26:09] [Server thread/INFO]: Running delayed init tasks
+[07:26:09] [Craft Scheduler Thread - 0 - InventoryRollbackPlus/INFO]: [InventoryRollbackPlus] Checking for updates...
+[07:26:09] [Server thread/INFO]: [PlaceholderAPI] An update for PlaceholderAPI (v2.11.7) is available at:
+[07:26:09] [Server thread/INFO]: [PlaceholderAPI] https://www.spigotmc.org/resources/placeholderapi.6245/
+[07:26:09] [Server thread/INFO]: Done (35.315s)! For help, type "help"
+[07:26:09] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] Checking for Updates ... 
+[07:26:09] [Craft Scheduler Thread - 0 - InventoryRollbackPlus/INFO]: 
+===============================================================================
+A minor update to InventoryRollbackPlus is available!
+Download at https://www.spigotmc.org/resources/inventoryrollbackplus-1-8-1-16-x.85811/
+(current: 1.7.8, latest: 1.7.9)
+===============================================================================
+
+[07:26:09] [Craft Scheduler Thread - 2 - ClanForge/INFO]: [ClanForge] There is a new update available!
+[07:26:09] [Craft Scheduler Thread - 3 - Vault/INFO]: [Vault] No new version available
+[07:26:09] [Server thread/INFO]: [AdvancedChat] Successfully hooked into ProtocolLib, PlaceholderAPI, Vault, LuckPerms, Tab.
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: vault [1.8.3]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: server [2.7.3]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: statistic [2.0.2]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: player [2.0.9]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: luckperms [5.4-R2]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: changeoutput [1.2.2]
+[07:26:10] [Server thread/INFO]: [PlaceholderAPI] Successfully registered external expansion: localtime [1.2]
+[07:26:10] [Server thread/INFO]: 7 placeholder hook(s) registered!
+[07:31:18] [User Authenticator #0/WARN]: [LuckPerms] LuckPerms already has data for player 'Alekopue' - but this data is stored under a different UUID.
+[07:31:18] [User Authenticator #0/WARN]: [LuckPerms] 'Alekopue' has previously used the unique ids [8f724caa-ab3d-3548-a1f0-3ac4e451e401] but is now connecting with '0cf371cc-4030-3a18-b2ee-685a1e934d61'
+[07:31:18] [User Authenticator #0/WARN]: [LuckPerms] The UUID the player is connecting with now is NOT Mojang-assigned (type 3). This implies that THIS server is not authenticating correctly, but one (or more) of the other servers/proxies in the network are.
+[07:31:18] [User Authenticator #0/WARN]: [LuckPerms] If you're using BungeeCord/Velocity, please ensure that IP-Forwarding is setup correctly on all of your backend servers!
+[07:31:18] [User Authenticator #0/WARN]: [LuckPerms] See here for more info: https://luckperms.net/wiki/Network-Installation#pre-setup
+[07:31:19] [User Authenticator #0/INFO]: UUID of player Alekopue is 0cf371cc-4030-3a18-b2ee-685a1e934d61
+[07:31:21] [Server thread/INFO]: Alekopue joined the game
+[07:31:22] [Server thread/INFO]: Alekopue[/127.16.207.187:36315] logged in with entity id 57 at ([world]7.5, 78.0, 2.5)
+[07:31:27] [Server thread/INFO]: Alekopue lost connection: Disconnected
+[07:31:27] [Server thread/INFO]: Alekopue left the game
+[07:31:28] [User Authenticator #0/INFO]: UUID of player Alekopue is 0cf371cc-4030-3a18-b2ee-685a1e934d61
+[07:31:28] [Server thread/INFO]: Alekopue joined the game
+[07:31:28] [Server thread/INFO]: Alekopue[/127.16.207.187:56463] logged in with entity id 193 at ([world]7.5, 78.0, 2.5)
+[07:32:28] [Server thread/INFO]: Alekopue issued server command: /gamemode c
+[07:32:45] [Server thread/INFO]: Made Alekopue a server operator
+[07:32:47] [Server thread/INFO]: Alekopue was shot by Skeleton
+[07:32:54] [Server thread/INFO]: Alekopue issued server command: /gamemode creative
+[07:32:54] [Server thread/INFO]: [Alekopue: Set own game mode to Creative Mode]
+[07:35:35] [Server thread/INFO]: Alekopue issued server command: /msg
+[07:40:14] [User Authenticator #1/INFO]: UUID of player cereza31 is 74808f91-9dfb-33d8-aa28-ac5e9cfa416d
+[07:40:16] [Server thread/INFO]: cereza31 joined the game
+[07:40:16] [Server thread/INFO]: cereza31[/127.1.115.178:34587] logged in with entity id 1280 at ([world]-16.844242982536404, 149.39101315372656, 48.98392061951594)
+[07:42:11] [Server thread/INFO]: cereza31 has completed the challenge [Serious Dedication]
+[07:42:24] [Async Chat Thread - #0/INFO]: [Sin Clan] Miembro Alekopue » te quito el creativo?
+[07:42:32] [Async Chat Thread - #1/INFO]: [Sin Clan] OVERLORD cereza31 » no
+[07:43:28] [Async Chat Thread - #1/INFO]: [Sin Clan] Miembro Alekopue » ok
+[07:43:33] [Server thread/INFO]: Alekopue issued server command: /msg
+[07:46:55] [Server thread/INFO]: Alekopue issued server command: /gamemode spectator
+[07:46:55] [Server thread/INFO]: [Alekopue: Set own game mode to Spectator Mode]
+[07:47:00] [Server thread/INFO]: Alekopue issued server command: /tp cereza31
+[07:47:00] [Server thread/INFO]: [Alekopue: Teleported Alekopue to cereza31]
+[07:47:15] [Server thread/INFO]: Alekopue issued server command: /gamemode creative
+[07:47:15] [Server thread/INFO]: [Alekopue: Set own game mode to Creative Mode]
+[07:47:22] [Server thread/INFO]: Alekopue issued server command: /time set day
+[07:47:22] [Server thread/INFO]: [Alekopue: Set the time to 1000]
+[07:49:35] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » me siento mañ
+[07:49:43] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » no quiero se yo
+[07:49:57] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » ya no quiero vivir siendo yo
+[07:50:11] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » me da asco lo que soy
+[07:50:41] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » desde cuando te sientes así?
+[07:50:54] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » desde siempre
+[07:51:06] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » siempre eh sido una mierda de persona
+[07:51:10] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » desde siempre cuando?
+[07:51:23] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » desde que me volvi un adicto
+[07:51:30] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » entonces si ya lo identificaste, cambia para ti
+[07:51:32] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » ya sabes a que
+[07:51:39] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » no puedo
+[07:51:42] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » adicto? no entiendo
+[07:51:55] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » desde pequeño eh sido pajero
+[07:52:04] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » me eh acostumbrado a eso
+[07:52:10] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » al porno
+[07:52:33] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » por eso me doy asco
+[07:52:45] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » me doy asco por haberme expuesto a eso
+[07:52:53] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » me da asco lo que soy
+[07:52:55] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » entonces has seguido viendo porno? ya veo
+[07:53:12] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » no es eso
+[07:53:24] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » pero me da asco ser asi
+[07:53:45] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » entonces porqué dices que te volviste a ser adicto a eso
+[07:54:04] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » soy una mierda britany
+[07:54:25] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » no me siento bien
+[07:54:30] [Async Chat Thread - #3/INFO]: [Sin Clan] OVERLORD cereza31 » entonces actualmente a que eres ADICTO?
+[07:54:39] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » nose
+[07:55:04] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » solo quiero desaparecer
+[07:55:09] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » y no hacer nada bien
+[07:55:12] [Async Chat Thread - #3/INFO]: [Sin Clan] Miembro Alekopue » morirme
+[07:55:15] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » matarme
+[07:55:19] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » olvidar todo
+[07:55:24] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » a todos
+[07:55:34] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » y simplemente irme y desaparecer
+[07:55:37] [Async Chat Thread - #2/INFO]: [Sin Clan] OVERLORD cereza31 » pues lamentablemente no puedes hacerlo
+[07:55:53] [Async Chat Thread - #2/INFO]: [Sin Clan] Miembro Alekopue » pero tu si puedes alejarte de mi vida para salir dañada
+[07:55:54] [Async Chat Thread - #2/INFO]: [Sin Clan] OVERLORD cereza31 » y la verdad no sé en que te habras metido ahora

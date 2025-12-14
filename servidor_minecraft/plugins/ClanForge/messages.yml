@@ -1,0 +1,430 @@
+version: 3.0.3 # Don't change this
+
+# Support HEX colors: <#RRGGBB>, <##RRGGBB>, &x&R&G&B&R&G&B, §x§R§G§B§R§G§B, &#RRGGBB
+
+clan-max-level: "&c&lMAX"
+gui-storage-title: "{clanName} &8| &eStorage"
+
+clan-level-up:
+
+  chat:
+    - ""
+    - "{center}&e&l&k!!!&r {clanName} &e&l&k!!!"
+    - "{center}&bLevel up to &e&l{level}&r&b!"
+    - ""
+
+  title: "{clanName}"
+  sub-title: "&7{oldLevel} ≫ &9{newLevel} ⭐"
+
+clan-create: [
+  "{prefix} &aClan {clanName} &ahas been created!",
+  "&eENTER CLAN NAME IN CHAT",
+  "&aNew Clan",
+  "&a⇙ &fEnter the name of your clan &a⇘",
+  "{prefix} &cClan creation cancelled!",
+  "{clanName}",
+  "&aClan created!"
+]
+
+new-clan-create:
+  message: |
+
+    &c&l╔═══════════════╗
+    
+      &fType the clan name in the chat
+      &fTo cancel&r <click:cancel>
+    
+    &c&l╚═══════════════╝
+  clickable:
+    cancel:
+      text: "&c[click here]"
+      hover: "&cClick to cancel clan creation"
+
+invitation:
+  message: |
+
+    &a&l╔═══════════════╗
+    
+      &fYou have been invited to the clan {clanName}
+    
+      <click:accept> &r&7━&r <click:deny>
+    
+    &a&l╚═══════════════╝
+  clickable:
+    accept:
+      text: "&a&lACCEPT"
+      hover: "&aClick to accept the invitation"
+    deny:
+      text: "&c&lDENY"
+      hover: "&cClick to decline the invitation"
+
+clan-type: [
+  "&cPrivate",
+  "&aPublic",
+  "&aON",
+  "&cOFF",
+  "&aY",
+  "&cN"
+]
+
+clan-player-status: [
+  "&aOnline",
+  "&cOffline",
+  "&a●",
+  "&7●"
+]
+
+perk-names: [
+  "&eMEMBER COUNT",
+  "&eBASE COUNT",
+  "&eTAG",
+  "&eMOTD",
+  "&eXP MULTIPLIER",
+  "&eMONEY MULTIPLIER",
+  "&eSTORAGE SIZE"
+]
+
+deposit-withdraw: [
+  "{clanName} &7> &aYou have sent &6{coins}⛃ &ato the clan",
+  "{clanName} &7> &aYou have withdrawn &6{coins}⛃ &afrom the clan"
+]
+
+clan-perms: [
+  "{clanName} &7> &aYou have granted the &b{perms}&a permission to player &e{playerName}",
+  "{clanName} &7> &cYou have removed the &b{perms}&c permission from player &e{playerName}",
+  "{clanName} &7> &cThe player already has this permission",
+  "{clanName} &7> &cThe player no longer has this permission"
+]
+
+clan-toggle: [
+  "{clanName} &7> &fLeader made the clan: &aPublic",
+  "{clanName} &7> &fLeader made the clan: &cPrivate",
+  "{clanName} &7> &fLeader &aenabled&f Clan PVP",
+  "{clanName} &7> &fLeader &cdisabled&f Clan PVP"
+]
+
+clan-player-leave: [
+  "{clanName} &7> &cPlayer &e{playerName}&c has left the clan!"
+]
+
+clan-player-promote-demote: [
+  "{clanName} &7> &aPlayer &e{playerName}&a has been promoted to {rank}&a!",
+  "{clanName} &7> &aPlayer &e{playerName}&a has been demoted to {rank}&a!"
+]
+
+clan-invite: [
+  "{clanName} &7> &aInvitation sent to &e{playerName}&a!",
+  "&e{playerName} &7> &aYou have received an invitation to join the clan {clanName}",
+  "{prefix} &cThe invitation to join the clan {clanName}&c has expired!"
+]
+
+clan-accept-deny: [
+  "{prefix} &cThe invitation to join the clan {clanName}&c has expired!",
+  "{clanName} &7> &aPlayer &e{playerName} &ahas joined the clan!",
+  "{prefix} &aYou have declined the invitation",
+  "{prefix} &cPlayer &e{playerName}&c has declined your clan invitation!"
+]
+
+clan-members: [
+  "&8« &6Clan Members &7[{members}/{maxMembers}] &8»",
+  "&7{#}.&r &7{playerStatus}&7 [{playerRank}&7] &f{playerName} &8-&r &9{playerXP}⚡ &6{playerCoins}⛃ &7K/D: &a{playerKills}&f/&c{playerDeaths} &7({playerKDR})⚔",
+  "&8« {prev_page} &7| &6Page {page}/{total} &7| {next_page} &8»",
+  "&7← Back",
+  "&7Forward →",
+  "&eClick to go to the previous page",
+  "&eClick to go to the next page"
+]
+
+clan-confirmation: [
+  "&8Action confirmation",
+  "&cDisband clan: &7{clanName}",
+  "&cKick player: &7{playerName}",
+  "&cNO",
+  "&aYES"
+]
+
+clan-disband: [
+  "{clanName} &7> &aThe clan has been disbanded!"
+]
+
+clan-player-kick: [
+  "{clanName} &7> &cPlayer &e{playerName} &chas been kicked!"
+]
+
+gui-pagination: [
+  "&aNext page",
+  "&7Go to page &a{currentPage}&7/{pageAmount}",
+  "&cThere are no more pages",
+
+  "&aPrevious page",
+  "&7Go to page &a{currentPage}&7/{pageAmount}",
+  "&cYou can't go further back",
+  "&c<- Back"
+]
+
+clan-chat: [
+  "{clanName}&7 > [{playerRank}&7] &e{playerName}&7: &f{msg}"
+]
+
+clan-tag: [
+  "{clanName} &7> &aThe leader has set the clan tag to: {newTag}",
+  "{clanName} &7> &aThe leader has reset the clan tag."
+]
+
+clan-rename: [
+  "{clanName} &7> &aThe clan leader changed the clan name to - {newName}"
+]
+
+clan-transfer: [
+  "{clanName} &7> &e{oldLeader} &atransferred clan leader rights to player &b{newLeader}"
+]
+
+base-create: [
+  "{clanName} &7> &aYou have created the base: &f{baseName}",
+]
+
+base-delete: [
+  "{clanName} &7> &aBase &e{baseName} &ahas been deleted!"
+]
+
+tp-to-base: [
+  "{clanName} &7> &eTeleportation will start in {sec}s. Do not move!",
+  "{clanName} &7> &aYou have been teleported to the base: &e{baseName}"
+]
+
+clan-perks: [
+  "&a&lFULL UPGRADED",
+  "{clanName} &7> &aThe clan leader upgraded the perk: {perkName}",
+  "&aClick to upgrade for &6{coins} ⛃",
+  "&cClan level &9{level}&c is required to unlock this perk!"
+]
+
+clan-player-join-leave-server: [
+  "{clanName} &7> &aPlayer &e{playerName} &ajoined the server!",
+  "{clanName} &7> &cPlayer &e{playerName} &cleft the server!"
+]
+
+clan-motd: [
+  "{clanName} &7> &aYou have updated the clan welcome message",
+  "&6Clan welcome message:"
+]
+
+admin-info: [
+  "{prefix} &aConfigurations reloaded successfully!",
+  "{prefix} &7Detected a change in storage method from &a{currentlyUsing} &7to &a{newUsing}&7. Performing data migration...",
+  "{prefix} &aData migration completed successfully!"
+]
+
+storage-limit:
+  name: "&cNot available slot"
+  lore:
+    - ""
+    - "&7Upgrade the clan perk"
+    - "&7to gain an additional slot."
+
+help-cmd:
+  - "&e/clan create &7- Create a clan"
+  - "&e/clan menu &7- Clan menu"
+  - "&e/clan permission <player> <perm> <true/false> &7- Set custom permissions for a player"
+  - "&e/clan storage &7- Open the clan storage"
+  - "&e/clan deposit <amount> &7- Deposit money into the clan balance"
+  - "&e/clan withdraw <amount> &7- Withdraw coins from the clan balance"
+  - "&e/clan disband &7- Disband the clan"
+  - "&e/clan leave &7- Leave the clan"
+  - "&e/clan pvp &7- ON/OFF"
+  - "&e/clan public &7- Set the clan &aPublic"
+  - "&e/clan private &7- Set the clan &cPrivate"
+  - "&e/clan invite <player> &7- Invite a player to the clan"
+  - "&e/clan accept &7- Accept a clan invitation"
+  - "&e/clan deny <player> &7- Decline a clan invitation"
+  - "&e/clan kick <player> &7- Kick a player from the clan"
+  - "&e/clan promote <player> &7- Promote a player to officer"
+  - "&e/clan demote <player> &7- Demote an officer to member"
+  - "&e/clan transfer <player> &7- Transfer leadership to a player"
+  - "&e/clan rename <name> &7- Rename the clan"
+  - "&e/clan tag <tag> &7- Set the clan tag"
+  - "&e/clan motd &7- Edit a welcome message line"
+  - "&e/clan setbase <name> &7- Set the clan base"
+  - "&e/clan base tp <name> &7- Teleport to the base"
+  - "&e/clan base delete <name> &7- Delete the base"
+  - "&e/cc <msg> &7- Clan chat"
+
+help-header: "&8« &6Clan: Commands &8»"
+help-footer: "&8« {prev_page} &7| &6Page {page}/{total} &7| {next_page} &8»"
+help-prev-page: "&7← Back"
+help-next-page: "&7Next →"
+help-prev-page-command: "&eClick to go to the previous page"
+help-next-page-command: "&eClick to go to the next page"
+
+motd-help-cmd:
+  - "&6Usage:"
+  - "&e/clan motd add <text> &7- Add a line"
+  - "&e/clan motd edit <line> <text> &7- Edit a line"
+  - "&e/clan motd remove <line> &7- Remove a line"
+  - "&e/clan motd clear &7- Clear the greeting"
+  - "&e/clan motd preview &7- Show the greeting"
+
+errors: [
+  "{prefix} &cInvalid command usage! Type /clan help for help.",
+  "{prefix} &cYou do not have permission!",
+  "{prefix} &cYou are already in a clan!",
+  "{prefix} &cPlayer not found!",
+  "{prefix} &cLength must be between &e{min}&c and &e{max} &ccharacters!",
+  "{prefix} &cOnly letters are allowed!",
+  "{prefix} &cFailed to perform the action!",
+  "{prefix} &cYou don't have enough money!",
+  "{prefix} &cThe clan name is already taken by another clan!",
+  "{prefix} &cYou are not in a clan!",
+  "{prefix} &cEnter a valid amount!",
+  "{clanName} &7> &cDaily deposit limit reached! Remaining limit for today: &6{limit}⛃",
+  "{clanName} &7> &cNot enough &6coins&c in the clan treasury for withdrawal!",
+  "{clanName} &7> &cThe player already has this rank!",
+  "{clanName} &7> &cPlease wait &e{sec}s&c before sending a new invitation to this player.",
+  "{clanName} &7> &cThe limit has been reached for the perk: {perkName}",
+  "{prefix} &cYou have no active invitations!",
+  "{prefix} &cThe clan no longer exists!",
+  "{prefix} &7> &cThe player is already in a clan!",
+  "{prefix} &7> &cYou can only join a private clan by invitation!",
+  "{clanName} &7> &cPerk not unlocked: {perkName}",
+  "{clanName} &7> &cNot enough clan &6coins&c to proceed with this action!",
+  "{clanName} &7> &cA base with this name already exists!",
+  "{clanName} &7> &cBase with the name &e{baseName}&c not found!",
+  "{clanName} &7> &cTeleportation canceled! You moved!",
+  "{clanName} &7> &cYou can't create base in this world!",
+  "{clanName} &7> &cYour clan does not have enough &6coins&c to upgrade this perk!",
+  "{clanName} &7> &cInvalid line number! Available: from 1 to {max}",
+  "{clanName} &7> &cThe line number must be a number!",
+  "{clanName} &7> &cThe clan welcome message is empty!",
+  "{prefix} &cClan not found!",
+  "{prefix} &cThis server is not using RDB to sync clans!",
+  "{prefix} &6Synchronizing clan data...",
+  "{prefix} &aClan data synchronized successfully!",
+  "{prefix} &cAn error occurred during data migration. See the server console for details.",
+  "{clanName} &7> &cSomeone from your clan is using the storage right now. Hang tight until they’re done!",
+  "{prefix} &cPlease enter an integer!"
+]
+
+admin:
+  clan-info:
+    - "&8&m----------------------------------------"
+    - "&6&lClan Information: {clan_name}"
+    - "&8&m----------------------------------------"
+    - "&6Clan CID: &f{clan_cid}"
+    - "{clan_tag}"
+    - "&6Creation Date: &f{clan_created}"
+    - "&6Level: &f{clan_level}"
+    - "&6Experience: &f{clan_experience}"
+    - "&6Coins: &f{clan_coins}"
+    - ""
+    - "&6Settings:"
+    - "  &7Private: &f{clan_type}"
+    - "  &7PvP: &f{clan_pvp}"
+    - ""
+    - "&6Perks:"
+    - "  &7XP Multiplier: &fx{perk_xp_multiplier}"
+    - "  &7Money Multiplier: &fx{perk_money_multiplier}"
+    - "  &7Maximum Bases: &f{perk_max_bases}"
+    - "  &7Maximum Members: &f{perk_max_members}"
+    - "  &7Tag: &f{perk_tag}"
+    - "  &7MOTD: &f{perk_motd}"
+    - "  &7Storage Size: &f{perk_storage_size}"
+    - ""
+    - "&6Bases &7({base_count}/{perk_max_bases}):"
+    - "{bases_list}"
+    - ""
+    - "{motd_section}"
+    - ""
+    - "&6Members &7({member_count}/{perk_max_members}):"
+    - "{leader_section}"
+    - "{officers_section}"
+    - "{members_section}"
+    - "&8&m----------------------------------------"
+
+  clan-info-tag: "&6Tag: {clan_tag}"
+  clan-info-no-bases: "  &7No bases in the clan"
+  clan-info-base-item: "  &7• &f{base_name} &7({world}, {x}, {y}, {z})"
+  clan-info-motd-header: "&6MOTD:"
+  clan-info-motd-item: "  &7{index}. &f{motdText}"
+  clan-info-leader: "  &c• &fLeader: {player_name} &7(XP: {player_xp}, J: {player_joined}) {online_status}"
+  clan-info-officers-header: "  &6Officers:"
+  clan-info-officer-item: "    &6• &f{player_name} &7(XP: {player_xp}, J: {player_joined}) {online_status}"
+  clan-info-members-header: "  &7Members:"
+  clan-info-member-item: "    &7• &f{player_name} &7(XP: {player_xp}, J: {player_joined}) {online_status}"
+
+  clan-delete:
+    success: "{prefix} &aClan '{clan_name}' has been successfully deleted!"
+    notify-members: "{prefix} &cYour clan has been deleted by an administrator!"
+  clan-rename:
+    success: "{prefix} &aClan renamed from '{oldName}&a' to '{newClanName}&a' successfully!"
+    error: "&cA clan with the name '{newClanName}&c' already exists!"
+  clan-set-level:
+    success: "{prefix} &aYou set the level of clan '{clan_name}&a' to &f{level}"
+    invalid-level: "{prefix} &cLevel must be a positive number!"
+    max-level: "{prefix} &cMaximum clan level is: {maxLevel}"
+    incorrect-level: "{prefix} &cInvalid level! Please enter an integer"
+  clan-coins:
+    error:
+      invalid-amount-positive: "{prefix} &cAmount must be a positive number!"
+      invalid-amount-integer: "{prefix} &cInvalid amount! Please enter an integer."
+    add:
+      success: "{prefix} &aYou added &6{coins} coins &ato the clan {clan_name}&a!"
+    set:
+      success: "{prefix} &aYou set the clan '{clan_name}&a' balance to &6{coins} coins&a!"
+    take:
+      success: "{prefix} &aYou took &6{coins} coins &afrom the clan {clan_name}&a!"
+      not-enough-coins: "{prefix} &cThe clan does not have enough money! Current balance: &6{coins} coins"
+  clan-xp:
+    add:
+      success: "{prefix} &aYou added &9{xp} XP &ato the clan {clan_name}&a!"
+    take:
+      success: "{prefix} &aYou took &9{xp} XP &afrom the clan {clan_name}&a!"
+      not-enough-xp: "{prefix} &cThe clan does not have enough XP! Current XP: &9{xp} XP"
+  clan-tag:
+    error:
+      no-perk: "{prefix} &cThis clan does not have the perk unlocked!"
+    set:
+      success: "{prefix} &aYou have set the clan tag {tag} for {clan_name}"
+    reset:
+      success: "{prefix} &aYou have reset the clan tag for {clan_name}"
+
+  clan-base:
+    list:
+      - "&6=== Clan Bases '{clan_name}&6' ==="
+      - "&7Total Bases: &f{base_count} &7/ &f{perk_max_bases}"
+      - "{bases_list}"
+    item:
+      - "&a{index}. &f{base_name}"
+      - "   &7World: &f{world}"
+      - "   &7Coordinates: &f{x}, {y}, {z}"
+      - ""
+
+    success-teleport: "{prefix} &aYou have been teleported to the base '{base_name}' of clan '{clan_name}'!"
+    success-delete: "{prefix} &aBase '{base_name}' successfully deleted from clan '{clan_name}'!"
+    not-found: "{prefix} &cBase with the name '{base_name}' not found in clan '{clan_name}'!"
+    world-not-found: "{prefix} &cWorld for base '{base_name}' not found! The world might have been deleted."
+    no-bases: "{prefix} &cClan '{clan_name}' has no bases."
+    error: "{prefix} &cFailed to delete base '{base_name}' from clan '{clan_name}'!"
+
+  help-cmd:
+    - "&e/clan admin info <clan> &7- Detailed clan information"
+    - "&e/clan admin storage <clan> &7- View clan storage"
+    - "&e/clan admin delete <clan> &7- Delete a clan"
+    - "&e/clan admin rename <clan> <new_name> &7- Rename a clan"
+    - "&e/clan admin setlevel <clan> <level> &7- Set clan level"
+    - "&e/clan admin tag <clan> <tag/reset> &7- Set clan tag or reset"
+    - "&e/clan admin coins add <clan> <amount> &7- Add money to a clan"
+    - "&e/clan admin coins set <clan> <amount> &7- Set clan balance"
+    - "&e/clan admin coins take <clan> <amount> &7- Take money from a clan"
+    - "&e/clan admin xp add <clan> <amount> &7- Add XP to a clan"
+    - "&e/clan admin xp take <clan> <amount> &7- Take XP from a clan"
+    - "&e/clan admin base list <clan> &7- List all clan bases"
+    - "&e/clan admin base teleport <clan> <base> &7- Teleport to a clan base"
+    - "&e/clan admin base delete <clan> <base> &7- Delete a clan base"
+
+  help-header: "&8« &6Clan: Admin Commands &8»"
+  help-footer: "&8« {prev_page} &7| &6Page {page}/{total} &7| {next_page} &8»"
+  help-prev-page: "&7← Back"
+  help-next-page: "&7Forward →"
+  help-prev-page-command: "&eClick to go to the previous page"
+  help-next-page-command: "&eClick to go to the next page"
+  error-command: "&cUnknown command! Use /clan admin help for assistance"

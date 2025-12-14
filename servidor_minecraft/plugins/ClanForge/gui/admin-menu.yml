@@ -1,0 +1,35 @@
+title: '&cClan Admin'
+height: 5
+fill-borders: true
+
+items:
+
+  clan-settings:
+    name: "&eClan Settings"
+    item: COMPARATOR
+    slot: 21
+    lore:
+      - ""
+      - "&a> Click to open the menu"
+    click:
+      left: OPEN_SETTINGS
+      right: OPEN_SETTINGS
+
+  clan-perks:
+    name: "&eClan Perks"
+    item: ENCHANTED_BOOK
+    slot: 23
+    lore:
+      - ""
+      - "&a> Click to open the menu"
+    click:
+      left: OPEN_PERKS
+      right: OPEN_PERKS
+
+  back:
+    name: "&c<- Go Back"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWExZWYzOThhMTdmMWFmNzQ3NzAxNDUxN2Y3ZjE0MWQ4ODZkZjQxYTMyYzczOGNjOGE4M2ZiNTAyOTdiZDkyMSJ9fX0" # Material
+    slot: 40
+    click:
+      left: BACK
+      right: BACK

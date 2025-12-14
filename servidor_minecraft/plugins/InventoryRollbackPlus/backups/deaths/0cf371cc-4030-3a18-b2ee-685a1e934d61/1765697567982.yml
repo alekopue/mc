@@ -1,0 +1,12 @@
+xp: 0.0
+health: 0.0
+hunger: 17
+saturation: 0.0
+location:
+  world: world
+  x: 8.6
+  y: 72.0
+  z: 12.6
+logType: DEATH
+version: v1_21_R3
+deathReason: PROJECTILE (Arrow, Skeleton)

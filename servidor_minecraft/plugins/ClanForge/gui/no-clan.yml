@@ -1,0 +1,124 @@
+title: '&cNo Clan'
+height: 5
+fill-borders: true # Default true
+
+items:
+
+  no-clan:
+    name: "&cYou don't have a clan"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2IyOWNmM2JmMmYyNzk1MzM4OGQ5NTYzYmY5ZTgzYmIxYWVkZmM0NzA1ZjNmYTdjNzc0OGYwYTc5NzY2Y2Q5ZSJ9fX0="
+    slot: 21
+    lore:
+      - ""
+      - "&7Create a clan to use"
+      - "&7all the features."
+      - ""
+      - "&7Cost: &6${cost}"
+      - ""
+      - "&aClick to create a clan"
+    click:
+      closeGUI: true
+      left: CREATE_CLAN
+      right: CREATE_CLAN
+
+  all-clans:
+    name: "&eAll Clans"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0"
+    slot: 23
+    lore:
+      - ""
+      - "&aClick to open menu"
+    click:
+      closeGUI: true
+      left: "PLAYER: clan list"
+      right: "PLAYER: clan list"
+
+  clan-help:
+    name: "&eClan commands"
+    item: PAPER
+    slot: 40
+    lore:
+      - ""
+      - "&aClick to see the full list of commands"
+    click:
+      closeGUI: true
+      left: "PLAYER: clan help"
+      right: "PLAYER: clan help"
+
+  1:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 10
+
+  2:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 11
+  3:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 19
+  4:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 20
+  5:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 28
+  6:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 29
+  7:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 12
+  8:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 30
+  9:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 13
+  10:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 22
+  11:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 31
+  12:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 14
+  13:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 32
+  14:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 15
+  15:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 24
+  16:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 33
+  17:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 16
+  18:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 25
+  19:
+    name: ""
+    item: GRAY_STAINED_GLASS_PANE
+    slot: 34

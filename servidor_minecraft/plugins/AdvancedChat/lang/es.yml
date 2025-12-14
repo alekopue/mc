@@ -1,0 +1,166 @@
+prefix: "<b><gradient:#FFE385:#FF4993>CHAT:</gradient></b> "
+
+messages:
+  recipientOffline: "%prefix%<red>¡El jugador no está en línea!</red>"
+  reload: "%prefix%<green>¡Plugin recargado!</green>"
+  noPermission: "%prefix%<red>¡No tienes permiso para usar esto!</red>"
+  playerCommandOnly: "%prefix%<red>¡La consola no puede usar este comando!</red>"
+
+chatColor:
+  colorSet: "%prefix%<green>Has establecido tu color de chat a %color_name%</green>"
+  colorRemove: "%prefix%<green>Has eliminado tu color de chat</green>"
+
+chatTags:
+  tagSet: "%prefix%<green>Has establecido tu etiqueta de chat a %tag%</green>"
+  tagRemove: "%prefix%<green>Has eliminado tu etiqueta de chat</green>"
+
+clear:
+  onClear: "<green>El chat ha sido limpiado por %player_name%</green>"
+
+msg:
+  empty: "%prefix%<red>¡El mensaje no puede estar vacío!</red>"
+  yourself: "%prefix%<red>¡No puedes enviarte mensajes a ti mismo!</red>"
+  targetOffline: "%prefix%<red>¡El jugador no está en línea!</red>"
+  outgoing: "<red>Tú </red><dark_gray>>> </dark_gray><red>%recipient_name% (%recipient_server%)</red><dark_gray> >> </dark_gray><gray>%message%</gray>"
+  incoming: "<red>%sender_name% (%sender_server%)</red><dark_gray>>> </dark_gray><red>Tú</red><dark_gray> >> </dark_gray><gray>%message%</gray>"
+
+reply:
+  noReply: "%prefix%<red>¡No hay usuario al que responder!</red>"
+
+ignore:
+  yourself: "%prefix%<red>¡No puedes ignorarte a ti mismo!</red>"
+  on: "%prefix%<green>Has ignorado a %player_name%</green>"
+  off: "%prefix%<red>Has dejado de ignorar a %player_name%</red>"
+  onRecipient: "%prefix%<green>Has ignorado a %player_name% para %recipient_name%</green>"
+  offRecipient: "%prefix%<red>Has dejado de ignorar a %player_name% para %recipient_name%</red>"
+  onAll: "%prefix%<green>Has ignorado a todos los jugadores</green>"
+  offAll: "%prefix%<green>Has dejado de ignorar a todos los jugadores</green>"
+  onAllRecipient: "%prefix%<green>Has ignorado a todos para %recipient_name%</green>"
+  offAllRecipient: "%prefix%<green>Has dejado de ignorar a todos para %recipient_name%</green>"
+  notIgnored: "%prefix%<red>¡%player_name% no está ignorado!</red>"
+  notIgnoredRecipient: "%prefix%<red>¡%recipient_name% no tiene ignorado a %player_name%!</red>"
+  notIgnoredAll: "%prefix%<red>¡No tienes ignorados a todos los jugadores!</red>"
+  notIgnoredAllRecipient: "%prefix%<red>¡%recipient_name% no tiene ignorados a todos los jugadores!</red>"
+
+ignorelist:
+  listFormat:
+    - 'Todos los jugadores ignorados: %ignored_all%'
+    - '<green>Lista de jugadores ignorados:'
+    - '%player_list%'
+  playerFormat:
+    - '<gray>- </gray><white>%player_name%'
+
+spy:
+  yourself: "%prefix%<red>¡No puedes espiarte a ti mismo!</red>"
+  on: "%prefix%<green>Ahora estás espiando todos los MPs de %player_name%</green>"
+  off: "%prefix%<green>Has dejado de espiar los MPs de %player_name%</green>"
+  onRecipient: "%prefix%<green>%recipient_name% ahora está espiando a %player_name%</green>"
+  offRecipient: "%prefix%<red>%recipient_name% dejó de espiar a %player_name%</red>"
+  onAll: "%prefix%<green>Ahora estás espiando todos los MPs</green>"
+  offAll: "%prefix%<red>Has dejado de espiar todos los MPs</red>"
+  onAllRecipient: "%prefix%<green>%recipient_name% está espiando todos los MPs</green>"
+  offAllRecipient: "%prefix%<red>%recipient_name% ha dejado de espiar todos los MPs</red>"
+  notSpying: "%prefix%<red>¡No estás espiando a %player_name%!</red>"
+  notSpyingRecipient: "%prefix%<red>¡%recipient_name% no está espiando a %player_name%!</red>"
+  notSpyingAll: "%prefix%<red>¡No estás espiando todos los MPs!</red>"
+  notSpyingAllRecipient: "%prefix%<red>¡%recipient_name% no está espiando todos los MPs!</red>"
+  incoming: "<yellow>ESPÍA: <red>%sender_name% </red><dark_gray>>> </dark_gray><red>%player_name%</red><dark_gray> >> </dark_gray><gray>%message%</gray>"
+
+spylist:
+  listFormat:
+    - 'Todos los jugadores espiados: %spy_all%'
+    - '<green>Lista de jugadores espiados:'
+    - '%player_list%'
+  playerFormat:
+    - '<gray>- </gray><white>%player_name%'
+
+channel:
+  invalid: "%prefix%<red>%channel_id% no existe</red>"
+  noPermissionJoin: "%prefix%<red>¡No tienes permiso para unirte a este canal!</red>"
+  noPermissionLeave: "%prefix%<red>¡No tienes permiso para dejar este canal!</red>"
+  alreadyJoined: "%prefix%<red>¡Ya estás en este canal!</red>"
+  alreadyJoinedRecipient: "%prefix%<red>¡El objetivo ya está en este canal!</red>"
+  join: "%prefix%<green>¡Te has unido al canal %channel_name%!</green>"
+  joinRecipient: "%prefix%<green>¡Has hecho que %recipient_name% se una al canal %channel_name%!</green>"
+  leave: "%prefix%<green>¡Has dejado el canal %channel_name%!</green>"
+  leaveRecipient: "%prefix%<green>¡Has hecho que %recipient_name% deje el canal %channel_name%!</green>"
+  noChannel: "%prefix%<red>¡No estás en ningún canal!</red>"
+  noChannelRecipient: "%prefix%<red>¡El objetivo no está en ningún canal!</red>"
+
+info:
+  - "<gray>Canal:</gray> <yellow>%advancedchat_channel_name% (%advancedchat_channel_id%)"
+  - "<gray>Color:</gray> <yellow>%advancedchat_channel_color%color"
+  - "<gray>Siempre Visible:</gray> <yellow>%advancedchat_channel_always_visible%"
+  - "<gray>Mismo Mundo:</gray> <yellow>%advancedchat_same_world%"
+  - "<gray>Entre Servidores:</gray> <yellow>%advancedchat_cross_server%"
+  - "<gray>Alcance:</gray> <yellow>%advancedchat_channel_range%"
+  - "<gray>Prioridad:</gray> <yellow>%advancedchat_channel_priority%"
+
+offAutoJoin: "%prefix%<red>¡Auto-unión desactivada!</red>"
+offAutoJoinRecipient: "%prefix%<red>¡Auto-unión desactivada para %recipient_name%!</red>"
+onAutoJoin: "%prefix%<green>¡Auto-unión activada!</green>"
+onAutoJoinRecipient: "%prefix%<green>¡Auto-unión activada para %recipient_name%!</green>"
+
+disable:
+  already: "%prefix%<red>El canal %channel_id% ya está desactivado</red>"
+  success: "%prefix%<green>El canal %channel_id% ha sido desactivado</green>"
+  message: "%prefix%<red>El canal %channel_id% está desactivado</red>"
+
+enable:
+  already: "%prefix%<red>El canal %channel_id% ya está activado</red>"
+  success: "%prefix%<green>El canal %channel_id% ha sido activado</green>"
+
+channels:
+  listFormat:
+    - '<green>Canales disponibles:'
+    - '%channel_list%'
+  channelFormat:
+    - '<gray>- </gray><white>%channel_name%'
+
+warn:
+  messageUser: "<red>Has sido advertido por: %reason%</red>"
+  messageStaff: "<red><bold>[Advertencias] </bold><red>%player% ha sido advertido por: %reason%</red>"
+
+alert:
+  messageStaff: "<red><bold>[Alerta] </bold><red>%reason%</red>"
+
+channelSpy:
+  on: "%prefix%<green>Estás espiando mensajes del canal %channel_name%</green>"
+  off: "%prefix%<red>Has dejado de espiar mensajes del canal %channel_name%</red>"
+  onRecipient: "%prefix%<green>%recipient_name% está espiando mensajes del canal %channel_name%</green>"
+  offRecipient: "%prefix%<green>%recipient_name% ha dejado de espiar mensajes del canal %channel_name%</green>"
+  onAll: "%prefix%<green>Estás espiando todos los canales</green>"
+  offAll: "%prefix%<red>Has dejado de espiar todos los canales</red>"
+  onAllRecipient: "%prefix%<green>%recipient_name% está espiando todos los canales</green>"
+  offAllRecipient: "%prefix%<red>%recipient_name% ha dejado de espiar todos los canales</red>"
+  notSpying: "%prefix%<red>¡No estás espiando el canal %channel_name%!</red>"
+  notSpyingRecipient: "%prefix%<red>¡%recipient_name% no está espiando el canal %channel_name%!</red>"
+  notSpyingAll: "%prefix%<red>¡No estás espiando ningún canal!</red>"
+  notSpyingAllRecipient: "%prefix%<red>¡%recipient_name% no está espiando ningún canal!</red>"
+  incoming: "<yellow>ESPÍA DE CANAL <green>[%channel_name%]</green>: <red>%sender_name% </red><dark_gray>>> </dark_gray><gray>%message%</gray>"
+
+hideChat:
+  start: "%prefix%<green>Ahora estás ocultando todos los mensajes del chat</green>"
+  stop: "%prefix%<red>Ya no estás ocultando los mensajes del chat</red>"
+
+disableChat:
+  start: "%prefix%<red>El chat está ahora desactivado</red>"
+  stop: "%prefix%<green>El chat está ahora activado</green>"
+  message: "%prefix%<red>¡El chat está desactivado!</red>"
+
+hideAnnouncements:
+  start: "%prefix%<green>Ahora estás ocultando todos los anuncios</green>"
+  stop: "%prefix%<red>Ya no estás ocultando los anuncios</red>"
+
+announceConfig:
+  invalid: "%prefix%<red>¡Anuncio %announcement% inválido!</red>"
+
+chatMotd:
+  - "%player_head_8_2%"
+  - "%player_head_8_2%             &cBienvenido <white>%player_name%</white> a <b><gradient:#FF0500:#D00101>RE</gradient><gradient:#D00101:#D00101>VI</gradient><gradient:#D00101:#FF0500>AN</gradient></b>"
+  - "%player_head_8_3%   &c¡Gracias por unirte! Tu aventura te espera..."
+  - "%player_head_8_4%"
+  - "%player_head_8_5% &d&l» VISITA NUESTRA TIENDA: <white>/tienda"
+  - "%player_head_8_6% &9&l» ÚNETE A NUESTRO DISCORD: <white>/discord"
+  - "%player_head_8_7%        "
+  - "%player_head_8_8%        <gray><i>¡Disfruta de esta experiencia!</i></gray>"

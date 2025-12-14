@@ -1,0 +1,566 @@
+version: 3.0.3 # Don't change this
+
+update-check: true # Check for updates
+
+# Remote databases - require connection information to be configured below
+# > MySQL
+# Readable & editable text files - don't require any extra configuration
+# > JSON
+storage-method: JSON
+
+data:
+  # Specify as "host:port" if differs
+  address: localhost
+  database: minecraft
+  username: root
+  password: ''
+
+  #          (!) WORKS ONLY IF RDB (Remote Database) IS USED
+  #
+  # This option controls how frequently Clans will perform a sync task.
+  #
+  # - A sync task will refresh all data from the storage, and ensure that the most up-to-date data is
+  #   being used by the plugin.
+  # - This is disabled by default, as most users will not need it. However, if you're using a remote
+  #   storage type without a messaging service setup, you may wish to set this to something like 3.
+  # - Set to -1 to disable the task completely.
+  sync-minutes: 3
+
+
+  # These settings apply to the MySQL connection pool.
+  # - The default values will be suitable for the majority of users.
+  # - Do not change these settings unless you know what you're doing!
+  pool-settings:
+
+    # Sets the maximum size of the MySQL connection pool.
+    # - Basically this value will determine the maximum number of actual
+    #   connections to the database backend.
+    # - More information about determining the size of connection pools can be found here:
+    #   https://github.com/brettwooldridge/HikariCP/wiki/About-Pool-Sizing
+    maximum-pool-size: 10
+
+    # Sets the minimum number of idle connections that the pool will try to maintain.
+    # - For maximum performance and responsiveness to spike demands, it is recommended to not set
+    #   this value and instead allow the pool to act as a fixed size connection pool.
+    #   (set this value to the same as 'maximum-pool-size')
+    minimum-idle: 10
+
+    # This setting controls the maximum lifetime of a connection in the pool in milliseconds.
+    # - The value should be at least 30 seconds less than any database or infrastructure imposed
+    #   connection time limit.
+    maximum-lifetime: 1800000 # 30 minutes
+
+    # This setting controls how frequently the pool will 'ping' a connection in order to prevent it
+    # from being timed out by the database or network infrastructure, measured in milliseconds.
+    # - The value should be less than maximum-lifetime and greater than 30000 (30 seconds).
+    # - Setting the value to zero will disable the keepalive functionality.
+    keepalive-time: 0
+
+    # This setting controls the maximum number of milliseconds that the plugin will wait for a
+    # connection from the pool, before timing out.
+    connection-timeout: 5000 # 5 seconds
+    properties:
+      useUnicode: true
+      characterEncoding: utf8
+      #useSSL: false
+
+settings:
+
+  # Enables BungeeCord support (for inter-server communication: clan chat, clan notifications, syncing clans via player — faster than sync-minutes, etc.)
+  # If you're using BungeeCord, it's recommended to enable this feature.
+  bungeecord: false
+
+  # Plugin prefix.
+  prefix: "&7[&6ClanForge&7]&r"
+
+  # Regular Expressions for Clan Name/Tag.
+  # Documentation: https://learn.microsoft.com/en-us/dotnet/standard/base-types/regular-expression-language-quick-reference
+  regex: "^[\\p{L}]+$" # Default: ^[\\p{L}]+$ - Allow only letters.
+
+  # Enable clan storage (Command: /clan storage)
+  clan-storage: true
+
+  # Send a message to the clan when a player joins or leaves the server.
+  player-join-leave: true
+
+  date:
+    format: "dd/MM/yyyy HH:mm"
+    timezone: "UTC"
+
+  # Format numbers
+  formatter:
+    enabled: true
+    format: [ "K", "M", "B", "T" ]
+
+  countdowns:
+    # Time in seconds until the clan base is teleported.
+    # Default: 3 seconds
+    # Set to 0 to disable countdown.
+    tp-to-base: 3
+
+    # Time in seconds until the clan creation is completed.
+    # Default: 60 seconds
+    # Set to 0 to disable countdown.
+    creating-clan: 60
+
+  characters:
+    clan-name:
+      min-length: 3 # Minimum number of characters required for the clan name
+      max-length: 15 # Maximum number of characters allowed for the clan name
+
+    clan-tag:
+      min-length: 2 # Minimum number of characters required for the clan tag
+      max-length: 6 # Maximum number of characters allowed for the clan tag
+
+  clan-creating:
+
+    # Cost of creating a clan.
+    # Free if set to 0.
+    # Default: $5000
+    cost: 5000
+
+    boss-bar:
+      color: GREEN # Available colors: PINK, BLUE, RED, GREEN, YELLOW, PURPLE, WHITE
+
+    setting:
+      # Default clan settings applied automatically when a clan is created
+      clan-type: PUBLIC # Type of the clan: PUBLIC (anyone can join) or PRIVATE (invite only)
+      clan-pvp: false # Whether PVP between clan members is allowed (true/false)
+
+    # Enables visual and sound effects when a player creates a clan.
+    # Using: Totem of Undying.
+    send-effect: true
+
+  renaming:
+    clan-name:
+      # Cost of renaming a clan.
+      # Default: 10K Clan Coins
+      # Free if set to 0.
+      cost: 10000
+    clan-tag:
+      # Cost of renaming/first set a clan tag.
+      # Default: 0 Clan Coins
+      # Free if set to 0.
+      cost: 0
+
+  clan-deposit:
+    # Maximum amount of coins a clan can deposit per day
+    daily-limit: 1000000
+
+  clan-base:
+    # Worlds where you can set a clan base
+    allow: [ "world", "world_nether", "world_the_end" ]
+
+  clan-level-up:
+    # Enables visual and sound effects when a clan levels up.
+    # Using: Totem of Undying.
+    send-effect: true
+
+  papi: # PlaceholderAPI support
+    clan-format: "{clanName}" # Format of the clan name. Ex. %clans_clan_name%
+    tag-format: "&7[{tag}&7]" # Format of the clan tag. Ex. %clans_clan_tag%
+    no-clan: "&cNo clan" # Placeholder for player without a clan. Ex. %clans_clan_name%
+
+    # Format of the leaderboards
+    leaderboards:
+
+      # Ex. %clans_top_level_<pos>%
+      levels: "&7#{position}. {clan} &7- &9{level} ⭐"
+
+      # Ex. %clans_top_coins_<pos>%
+      coins: "&7#{position}. {clan} &7- &6{coins} ⛃"
+
+      # Ex. %clans_top_kills_<pos>%
+      kills: "&7#{position}. {clan} &7- &c{kills} ☠"
+
+      # Or by Kills/Deaths Ratio. Ex. %clans_top_kdr_<pos>%
+      kdr: "&7#{position}. {clan} &7- &b{kdr} ⚔"
+
+      no-top: "&7#{position}. &8--- --- ---"
+
+  # 'gui' folder
+  all-gui:
+    # Available Animations: Sequential, SplitSequential, HorizontalSnake, VerticalSnake, Row, Column, Random
+    # Disable animation: None
+    animation: Row
+    animation-tick-delay: 2 # Default animation tick delay
+
+    # The material used for GUI borders (e.g., in storage or menus)
+    # To disable the border completely, set `fill-borders: false` in the corresponding file inside the 'gui' folder
+    gui-border: BLUE_STAINED_GLASS_PANE
+
+  clan-role:
+
+    # When a clan is created, its creator is automatically assigned the LEADER role
+    #    with all permissions "clan.*".
+    #
+    # To manually set or change permissions for a specific player in the clan,
+    #    use the command (available ONLY for LEADER):
+    #        /clan perms <player> <permission> true/false
+    #
+    # You can find the full list of available permissions at: https://pastebin.com/92x8riU1
+    #
+    # (!) Below are the default permissions for each role. You can change them.
+
+    LEADER:
+      name: "&cLeader"
+      permissions: [
+        "clan.*"
+      ]
+
+    OFFICER:
+      name: "&6Officer"
+      permissions: [
+        "clan.kick",
+        "clan.invite",
+        "clan.base.create",
+        "clan.base.delete",
+        "clan.storage",
+        "clan.eco.deposit",
+        "clan.eco.withdraw",
+        "clan.base.menu",
+        "clan.base.tp",
+        "clan.chat"
+      ]
+
+    MEMBER:
+      name: "&7Member"
+      permissions: [
+        "clan.storage",
+        "clan.eco.deposit",
+        "clan.eco.withdraw",
+        "clan.base.menu",
+        "clan.base.tp",
+        "clan.chat"
+      ]
+
+clan-perks:
+
+  members:
+    cost: 2000000 # Cost to purchase additional member slots (add-slot)
+    add-slot: 10 # Slots automatically added when a clan is created
+    max-slot: 100 # Maximum number of member slots allowed in a clan
+
+  tag:
+    give-on-create: true # Whether the clan tag should be automatically assigned upon clan creation (true = yes, false = no)
+    cost: 1000000 # Cost of the clan tag
+    required-level: 3 # Required level to unlock the clan tag
+
+  motd:
+    give-on-create: false # Whether the clan motd should be automatically assigned upon clan creation (true = yes, false = no)
+    required-level: 2 # Required level to unlock the perk
+    cost: 10000 # Cost of the clan motd
+
+  bases:
+    cost: 500000 # Cost to purchase additional bases (add-slot)
+    add-slot: 1 # Slots automatically added when a clan is created
+    max-slot: 7 # Maximum number of bases allowed in a clan
+
+  xp-multiplier:
+    cost: 2500000 # Cost of the clan multiplier
+    add-multiplier: 0.5 # Multiplier automatically added when a clan is created
+    max-multiplier: 5 # Maximum multiplier allowed in a clan
+
+  money-multiplier:
+    cost: 5000000 # Cost of the clan multiplier
+    add-multiplier: 0.5 # Multiplier automatically added when a clan is created
+    max-multiplier: 5 # Maximum multiplier allowed in a clan
+
+  storage:
+    cost: 500000
+    add-slot: 7 # Initial number of slots
+    max-slot: 28 # Maximum (28 means 4 rows with 7 slots each)
+
+clan-earnings:
+
+  block-break:
+    chance: 30
+    rewards:
+      clan-xp:
+        enabled: true
+        add: 1 # Default reward for breaking a block: 1 XP
+      money:
+        enabled: true
+        add: 1 # Default reward for breaking a block: $1
+  player-kill:
+    rewards:
+      clan-xp:
+        enabled: true
+        add: 150 # Default reward for killing a player: 150 XP
+      money:
+        enabled: true
+        add: 5 # Default reward for killing a player: $5
+  friendly-mob:
+    rewards:
+      clan-xp:
+        enabled: true
+        add: 10 # Default reward for killing a friendly mob: 10 XP
+      money:
+        enabled: true
+        add: 2 # Default reward for killing a friendly mob: $2
+  hostile-mob:
+    rewards:
+      clan-xp:
+        enabled: true
+        add: 30 # Default reward for killing a hostile mob: 30 XP
+      money:
+        enabled: true
+        add: 1 # Default reward for killing a hostile mob: $1
+
+  mobs-type:
+    friendly-mob:
+      - COW
+      - PIG
+      - SHEEP
+      - WOLF
+      - OCELOT
+      - CHICKEN
+      - HORSE
+      - RABBIT
+      - VILLAGER
+      - CAT
+      - FOX
+      - PANDA
+      - TURTLE
+      - PARROT
+      - DOLPHIN
+      - LLAMA
+      - BEE
+      - STRIDER
+
+    hostile-mob:
+      - ZOMBIE
+      - SKELETON
+      - CREEPER
+      - SPIDER
+      - CAVE_SPIDER
+      - ENDERMAN
+      - WITCH
+      - BLAZE
+      - GHAST
+      - SLIME
+      - MAGMA_CUBE
+      - PHANTOM
+      - SILVERFISH
+      - ENDERMITE
+      - DROWNED
+      - HUSK
+      - STRAY
+      - PILLAGER
+      - VINDICATOR
+      - EVOKER
+      - RAVAGER
+      - VEX
+      - HOGLIN
+      - PIGLIN
+      - PIGLIN_BRUTE
+      - ZOGLIN
+      - WITHER_SKELETON
+      - SHULKER
+      - WITHER
+      - ELDER_GUARDIAN
+      - GUARDIAN
+      - ILLUSIONER
+      - ZOMBIFIED_PIGLIN
+
+clan-levels: # Clan levels
+  1:
+    expNextLevel: 1000
+  2:
+    expNextLevel: 2000
+  3:
+    expNextLevel: 3000
+  4:
+    expNextLevel: 4500
+  5:
+    expNextLevel: 6000
+  6:
+    expNextLevel: 7500
+  7:
+    expNextLevel: 9000
+  8:
+    expNextLevel: 11000
+  9:
+    expNextLevel: 13000
+  10:
+    expNextLevel: 15000
+  11:
+    expNextLevel: 17500
+  12:
+    expNextLevel: 20000
+  13:
+    expNextLevel: 23000
+  14:
+    expNextLevel: 26000
+  15:
+    expNextLevel: 29000
+  16:
+    expNextLevel: 32000
+  17:
+    expNextLevel: 35000
+  18:
+    expNextLevel: 38000
+  19:
+    expNextLevel: 42000
+  20:
+    expNextLevel: 46000
+  21:
+    expNextLevel: 50000
+  22:
+    expNextLevel: 55000
+  23:
+    expNextLevel: 60000
+  24:
+    expNextLevel: 65000
+  25:
+    expNextLevel: 70000
+  26:
+    expNextLevel: 75000
+  27:
+    expNextLevel: 80000
+  28:
+    expNextLevel: 85000
+  29:
+    expNextLevel: 90000
+  30:
+    expNextLevel: 96000
+  31:
+    expNextLevel: 102000
+  32:
+    expNextLevel: 108000
+  33:
+    expNextLevel: 115000
+  34:
+    expNextLevel: 122000
+  35:
+    expNextLevel: 130000
+  36:
+    expNextLevel: 138000
+  37:
+    expNextLevel: 147000
+  38:
+    expNextLevel: 156000
+  39:
+    expNextLevel: 166000
+  40:
+    expNextLevel: 176000
+  41:
+    expNextLevel: 187000
+  42:
+    expNextLevel: 198000
+  43:
+    expNextLevel: 210000
+  44:
+    expNextLevel: 222000
+  45:
+    expNextLevel: 235000
+  46:
+    expNextLevel: 248000
+  47:
+    expNextLevel: 262000
+  48:
+    expNextLevel: 276000
+  49:
+    expNextLevel: 291000
+  50:
+    expNextLevel: 306000
+  51:
+    expNextLevel: 322000
+  52:
+    expNextLevel: 338000
+  53:
+    expNextLevel: 355000
+  54:
+    expNextLevel: 372000
+  55:
+    expNextLevel: 390000
+  56:
+    expNextLevel: 408000
+  57:
+    expNextLevel: 427000
+  58:
+    expNextLevel: 446000
+  59:
+    expNextLevel: 466000
+  60:
+    expNextLevel: 486000
+  61:
+    expNextLevel: 507000
+  62:
+    expNextLevel: 528000
+  63:
+    expNextLevel: 550000
+  64:
+    expNextLevel: 572000
+  65:
+    expNextLevel: 595000
+  66:
+    expNextLevel: 618000
+  67:
+    expNextLevel: 642000
+  68:
+    expNextLevel: 666000
+  69:
+    expNextLevel: 691000
+  70:
+    expNextLevel: 716000
+  71:
+    expNextLevel: 742000
+  72:
+    expNextLevel: 768000
+  73:
+    expNextLevel: 795000
+  74:
+    expNextLevel: 822000
+  75:
+    expNextLevel: 850000
+  76:
+    expNextLevel: 878000
+  77:
+    expNextLevel: 907000
+  78:
+    expNextLevel: 936000
+  79:
+    expNextLevel: 966000
+  80:
+    expNextLevel: 996000
+  81:
+    expNextLevel: 1027000
+  82:
+    expNextLevel: 1058000
+  83:
+    expNextLevel: 1090000
+  84:
+    expNextLevel: 1122000
+  85:
+    expNextLevel: 1155000
+  86:
+    expNextLevel: 1188000
+  87:
+    expNextLevel: 1222000
+  88:
+    expNextLevel: 1256000
+  89:
+    expNextLevel: 1291000
+  90:
+    expNextLevel: 1326000
+  91:
+    expNextLevel: 1362000
+  92:
+    expNextLevel: 1398000
+  93:
+    expNextLevel: 1435000
+  94:
+    expNextLevel: 1472000
+  95:
+    expNextLevel: 1510000
+  96:
+    expNextLevel: 1548000
+  97:
+    expNextLevel: 1587000
+  98:
+    expNextLevel: 1626000
+  99:
+    expNextLevel: 1666000
+  100:
+    expNextLevel: 1700000

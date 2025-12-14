@@ -1,0 +1,118 @@
+title: '&cClan Settings'
+height: 5
+fill-borders: true
+
+items:
+
+  clan-public:
+    name: '&eClan Type: &aPublic'
+    item: LIME_DYE
+    slot: 20
+    lore:
+      - ""
+      - "&7In &aPublic&7 mode, players can"
+      - "&7freely join your clan."
+      - ""
+      - "&a> Click to make it &cPrivate"
+    click:
+      left: SET_PRIVATE_ON
+      right: SET_PRIVATE_ON
+
+  clan-private:
+    name: '&eClan Type: &cPrivate'
+    item: GRAY_DYE
+    slot: 20
+    lore:
+      - ""
+      - "&7In &cPrivate&7 mode, players cannot"
+      - "&7join your clan without an invitation."
+      - ""
+      - "&a> Click to make it Public"
+    click:
+      left: SET_PRIVATE_OFF
+      right: SET_PRIVATE_OFF
+
+  clan-damage-on:
+    name: '&eClan PVP: &aEnabled'
+    item: LIME_DYE
+    slot: 21
+    lore:
+      - ""
+      - "&7Clan members can damage"
+      - "&7each other in combat."
+      - ""
+      - "&a> Click to &cdisable"
+    click:
+      left: SET_DAMAGE_OFF
+      right: SET_DAMAGE_OFF
+
+  clan-damage-off:
+    name: '&eClan PVP: &cDisabled'
+    item: GRAY_DYE
+    slot: 21
+    lore:
+      - ""
+      - "&7Clan members cannot"
+      - "&7damage each other."
+      - ""
+      - "&a> &aClick to enable"
+    click:
+      left: SET_DAMAGE_ON
+      right: SET_DAMAGE_ON
+
+  disband-clan:
+    name: '&c&lDisband Clan'
+    item: BARRIER
+    slot: 24
+    lore:
+      - ""
+      - "&7This will permanently delete"
+      - "&7your clan and all its data."
+      - ""
+      - "&c⚠ &cThis action cannot be undone!"
+      - ""
+      - "&a> &aClick to confirm disband"
+    click:
+      left: DISBAND_CLAN
+      right: DISBAND_CLAN
+  1:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 14
+
+  2:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 15
+  3:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 16
+  4:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 23
+  5:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 32
+  6:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 33
+  7:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 34
+  8:
+    name: ""
+    item: RED_STAINED_GLASS_PANE
+    slot: 25
+
+  back:
+    name: '&c<- Go Back'
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWExZWYzOThhMTdmMWFmNzQ3NzAxNDUxN2Y3ZjE0MWQ4ODZkZjQxYTMyYzczOGNjOGE4M2ZiNTAyOTdiZDkyMSJ9fX0" # Material
+    slot: 40
+    click:
+      left: BACK
+      right: BACK

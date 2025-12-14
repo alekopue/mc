@@ -1,0 +1,179 @@
+nameTags:
+  revian:
+    permission: nametag.revian
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>% %advancedchat_tag%'
+      - '%luckperms_prefix% <gradient:#AD0C2A:#D8002B:#EA0027:#phase-mm-g#>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: integer
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      red: 255
+      green: 0
+      blue: 0
+    scale: 1.0
+  overlord:
+    permission: nametag.overlord
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% <gradient:#CF255E:#FF4282:#FF5BAD:#phase-mm-g#>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+  titan:
+    permission: nametag.titan
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% <gradient:#C04000:#FF5E13:#FF8D11:#phase-mm-g#>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+  vip++:
+    permission: nametag.vip++
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% <gradient:#FFFC00:#FBF24D>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+  vip+:
+    permission: nametag.vip+
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% <gradient:#B8FCFF:#68FFDF>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+  vip:
+    permission: nametag.vip
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% <gradient:#FF9300:#F7A83D>%player_name%</gradient>'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+  default:
+    permission: nametag.default
+    linesGroups:
+    - lines:
+      - '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin
+        Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%%changeoutput_equals_input:_matcher:{advancedchat_tag}_ifmatch:<gray>
+        [<gray><red>Sin tag<red><gray>]<gray>_else:{advancedchat_tag}%'
+      - '%luckperms_prefix% %player_name%'
+      - <gradient:#ff0000:#ff0000>%player_health_rounded%❤</gradient>&7┃&c%statistic_player_kills%⚔&7┃&f%statistic_deaths%💀&7┃&b%statistic_hours_played%⌚&7┃&a%vault_eco_balance_formatted%$💰
+      modifiers:
+      - type: global
+        enabled: true
+    background:
+      type: hex
+      enabled: false
+      opacity: 255
+      shadowed: true
+      seeThrough: false
+      hex: '#ffffff'
+    scale: 1.0
+# The default billboard constraints for the nametag. CENTER, HORIZONTAL, VERTICAL, FIXED)
+defaultBillboard: CENTER
+taskInterval: 1
+# This is opacity that will be applied to the nametag when a player sneaks. So, the value is from -128 to 127. 
+# Similar to the background, the text rendering is discarded when it is less than 26. Defaults to -1, which represents 255 and is completely opaque.
+sneakOpacity: 26
+yOffset: 0.30000001192092896
+viewDistance: 60.0
+# Which text formatter to use (MINIMESSAGE, MINEDOWN, LEGACY or UNIVERSAL) 
+# Take note that UNIVERSAL is the most resource intensive but it supports all formatting options (except for MINEDOWN) 
+
+# (&x&0&8&4&c&f&bc LEGACY OF LEGACY - &#084cfbc LEGACY - &#084cfbc& MINEDOWN - <color:#084cfbc> MINIMESSAGE)
+format: UNIVERSAL
+# Whether to disable the default name tag or not.
+disableDefaultNameTag: true
+# This option works if disableDefaultNameTag is enabled. This will skip the team internal cache and will make all default nametags invisible. The use case is when there is a npc from a plugin that doesn't use display entities / armorstands for nametags, and there is an online player with the name of the npc.
+forceDisableDefaultNameTag: false
+removeEmptyLines: true
+# Whether to see the NameTag of a user only while pointing at them
+showWhileLooking: false
+# Whether to see your own NameTag (Similar to nametag mod of Lunar Client)
+showCurrentNameTag: true
+# Whether to cache components for some time and reuse them or not.
+#  This is useful for performance improvements where a lot of gradients are used, but it uses a bit more memory.
+#  It could create problems with MiniPlaceholders, so it is disabled by default.
+componentCaching: false
+# How long to cache placeholders for (in ticks)
+placeholderCacheTime: 1
+enableRelationalPlaceholders: true
+placeholdersReplacements:
+  '%advancedvanish_is_vanished%':
+  - placeholder: Yes
+    replacement: ' &7[V]&r'
+  - placeholder: No
+    replacement: ''
+
+# Authors: AlexDev_

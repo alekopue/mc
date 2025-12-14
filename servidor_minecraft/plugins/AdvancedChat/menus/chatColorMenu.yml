@@ -1,0 +1,111 @@
+name: "<b><gradient:#FFE385:#FF4993>COLORES:</gradient></b>"
+size: 54
+
+items:
+  filler:
+    type: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  49:
+    type: PAPER
+    name: '&cReinicia tu formato de chat.'
+    action: CLEAR_COLOR
+  '53':
+    type: OAK_DOOR
+    name: '&cCerrar menu'
+    action: CLOSE
+
+settings:
+  # Slots in which colors can be displayed
+  colorSlots: 10,11,12,13,14,19,20,21,22,23,28,29,30,31,32,16,25,34,45
+
+  colorItem:
+    name: "%color_name%"
+    lore:
+      - '&7Click para habilitarlo.'
+  noPermissionItem:
+    name: "%color_name% &rColor del chat"
+    lore:
+      - '&cNo tienes permiso para usar este color.'
+      - '&7Puedes obtenerlo consiguiendo el rango o comprandolo cosmeticos en: &bTienda RevianMC!'
+
+  # Permission: advancedchat.chatcolor.<key> e.g. advancedchat.color.white
+  colors:
+    white:
+      format: "<white>%message%</white>"
+      name: "&fBlanco"
+      material: WHITE_STAINED_GLASS_PANE
+    dark_blue:
+      format: "<dark_blue>%message%</dark_blue>"
+      name: "&1Azul oscuro"
+      material: BLUE_STAINED_GLASS_PANE
+    dark_green:
+      format: "<dark_green>%message%</dark_green>"
+      name: "&2Verde oscuro"
+      material: GREEN_STAINED_GLASS_PANE
+    dark_aqua:
+      format: "<dark_aqua>%message%</dark_aqua>"
+      name: "&3Cyan oscuro"
+      material: CYAN_STAINED_GLASS_PANE
+    dark_red:
+      format: "<dark_red>%message%</dark_red>"
+      name: "&4Rojo oscuro"
+      material: RED_STAINED_GLASS_PANE
+    dark_purple:
+      format: "<dark_purple>%message%</dark_purple>"
+      name: "&5Morado"
+      material: PURPLE_STAINED_GLASS_PANE
+    gold:
+      format: "<gold>%message%</gold>"
+      name: "&6Dorado"
+      material: YELLOW_STAINED_GLASS_PANE
+    gray:
+      format: "<gray>%message%</gray>"
+      name: "&7Gris"
+      material: LIGHT_GRAY_STAINED_GLASS_PANE
+    dark_gray:
+      format: "<dark_gray>%message%</dark_gray>"
+      name: "&8Gris oscuro"
+      material: GRAY_STAINED_GLASS_PANE
+    blue:
+      format: "<blue>%message%</blue>"
+      name: "&9Azul"
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+    green:
+      format: "<green>%message%</green>"
+      name: "&aVerde"
+      material: LIME_STAINED_GLASS_PANE
+    aqua:
+      format: "<aqua>%message%</aqua>"
+      name: "&bCyan"
+      material: LIGHT_BLUE_STAINED_GLASS_PANE
+    red:
+      format: "<red>%message%</red>"
+      name: "&cRojo"
+      material: ORANGE_STAINED_GLASS_PANE
+    light_purple:
+      format: "<light_purple>%message%</light_purple>"
+      name: "&dRosado"
+      material: PINK_STAINED_GLASS_PANE
+    yellow:
+      format: "<yellow>%message%</yellow>"
+      name: "&eAmarillo"
+      material: YELLOW_STAINED_GLASS_PANE
+    bold:
+      format: "<bold>%message%</bold>"
+      name: "&f&lBold"
+      material: IRON_BLOCK
+      lore:
+        - '&f&lDale efecto negrita a tu texto.'
+    italic:
+      format: "<italic>%message%</italic>"
+      name: "&f&oItalic&r"
+      material: GOLD_BLOCK
+      lore:
+        - '&f&oDale efecto italic a tus textos.'
+    underline:
+      format: "<underlined>%message%</underlined>"
+      name: "&f&nUnderline&r"
+      material: DIAMOND_BLOCK
+      lore:
+        - '&f&nDale efecto delineado a tus textos.'
+     

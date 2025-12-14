@@ -1,0 +1,57 @@
+# Here you can configure chat formatting
+# Assign format with advancedchat.format.<formatName>
+
+# This is a default format, so it will be applied to everyone by default.
+# WE RECOMMEND KEEPING THIS DEFAULT FORMAT (feel free to change anything except the file name).
+priority: 1
+prefix:
+  text: '%changeoutput_equals_input:_matcher:{clans_clan_name}_ifmatch:<gray>[<gray>&cSin Clan<gray>]<gray>_else:<gray>[<gray>{clans_clan_name}<gray>]<gray>%'
+  hover:
+    - '&f❙ <gradient:#00BDFF:#70DAFF>⚔</gradient> <b><gradient:#00BDFF:#70DAFF>INFORMACION C</gradient><gradient:#70DAFF:#70DAFF>LANES</gradient></b> <gradient:#00BDFF:#70DAFF>⚔</gradient> &f❙'
+    - ''
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Lider de</gradient><gradient:#70DAFF:#70DAFF>l clan:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_leader}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_leader}%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Miembros:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_members}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_members} &f👤%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Nivel:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_level}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_level} &e★%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Dinero:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_coins}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_coins}&a$ &6⛁%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Experiencia</gradient><gradient:#70DAFF:#70DAFF> del clan:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_xp}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_xp} &9⚡%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Asesinatos</gradient><gradient:#70DAFF:#70DAFF> del clan:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_kills}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_kills} &c⚔%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Muertes d</gradient><gradient:#70DAFF:#70DAFF>el clan:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_deaths}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_deaths} &7💀%'
+    - '&f‣ <gradient:#70DAFF:#70DAFF>Clan </gradient><gradient:#70DAFF:#70DAFF>KDR:</gradient> %changeoutput_equals_input:_matcher:{clans_clan_kdr}_ifmatch:<b><gradient:#FF0000:#FF0000>✗</gradient></b>_else:{clans_clan_kdr}%'
+  # https://jd.advntr.dev/api/4.14.0/net/kyori/adventure/text/event/ClickEvent.Action.html
+  click: 'SUGGEST_COMMAND:/clan list '
+name:
+  text: " %luckperms_prefix% <gradient:#C04000:#FF5E13:#FF8D11>%player_displayname%"
+  hover:
+    - '<gradient:#C04000:#FF5E13:#FF8D11>❙ <b>INFORMACION DEL JUGADOR<b> ❙'
+    - ''
+    - '&7ɪɴꜰᴏʀᴍᴀᴄɪᴏɴ ɢᴇɴᴇʀᴀʟ'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Apodo: &f%player_displayname%'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Usuario: &f%player_name%'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Genero: &f%gender_badge%' 
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Rango: &f%luckperms_prefix%'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Horas jugadas: &f%statistic_hours_played%h'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Dinero: &f%vault_eco_balance_formatted%&a$'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Asesinatos: &f%statistic_player_kills%'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Muertes: &f%statistic_deaths%'
+    - '&7ɪɴꜰᴏʀᴍᴀᴄɪᴏɴ ᴇxᴛʀᴀ'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Nivel: &f%alonsolevels_level% (%alonsolevels_progress_format%)' 
+    - '<gray> •   %alonsolevels_progress_bar%'
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Casado: %changeoutput_equals_input:not married_matcher:{marriagemaster_partner}_ifmatch:<gray>[<gray>&cSin Pareja<gray>]<gray>_else:&f{marriagemaster_partner}%' 
+    - '<gray> •<gradient:#C04000:#FF5E13:#FF8D11> Trabajos: %changeoutput_equals_input:0_matcher:{ecojobs_in_jobs}_ifmatch:<gray>[<gray>&cSin trabajo<gray>]<gray>_else:&f{ecojobs_in_jobs}%' 
+
+  click: 'SUGGEST_COMMAND:/msg %player_name% '
+suffix:
+  text: '%advancedchat_tag% &7» '
+  hover:
+    - []
+  click: ""
+chat:
+  text: '%message%'
+  hover:
+    - '<red>Reportar el mensaje de: %player_name%'
+  click: 'SUGGEST_COMMAND:/report %player_name%'
+# Customisable range. If set to 0, range will be disabled.
+# Channel range overrides this range and takes a higher priority.
+range: 0.0
+# Whether to use cross-server chat
+crossServer: false

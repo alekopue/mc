@@ -1,0 +1,146 @@
+title: '&eClan &7- {clan_name}'
+height: 6
+fill-borders: true # Default true
+
+promote-player: "&aLeft click, to promote to {rank}"
+demote-player: "&cLeft click, to demote to {rank}"
+kick-player: "&cRight click, to kick from the clan"
+
+sort-by: [
+  "&eRANK",
+  "&6COINS",
+  "&9XP",
+  "&cKILLS",
+  "&bJOINED",
+  "&aLAST LOGIN"
+]
+
+items:
+
+  admin-menu:
+    name: "&eClan Settings"
+    item: COMPARATOR
+    slot: 0
+    lore:
+      - ""
+      - "&7Clan settings and upgrades"
+      - ""
+      - "&a> Click to open the admin menu"
+    click:
+      left: OPEN_ADMIN_MENU
+      right: OPEN_ADMIN_MENU
+
+  player:
+    name: '&e{player_name} &7({online_status}&7)'
+    item: PLAYER_HEAD
+    slot: BACKGROUND # Don't change this
+    lore:
+      - ""
+      - "&7Rank: {rank}"
+      - "&7Coins: &6{coins} ⛃"
+      - "&7XP: &9{xp} ⚡"
+      - ""
+      - "&7K/D: &a{kills}&f/&c{deaths} &7({kdr}) ⚔"
+      - ""
+      - "&7Last online: &a{last} ⌛"
+      - "&7Joined: &a{joined} ⌛"
+      - ""
+    click:
+      left: PROMOTE_DEMOTE_PLAYER
+      right: KICK_PLAYER
+
+  clan-information:
+    name: "&eClan Information"
+    item: NETHER_STAR
+    slot: 3
+    lore:
+      - ""
+      - "&7Name: {clan_name}"
+      - "&7Tag: {clan_tag}"
+      - ""
+      - "&7Leader: &a{clan_leader}"
+      - ""
+      - "&7Coins: &6{clan_coins} ⛃"
+      - ""
+      - "&7Level: &e{clan_level} ⭐"
+      - "&7XP: &9{clan_xp1}/{clan_xp2} ⚡"
+      - "{progress} &7{percent}"
+      - ""
+      - "&7Clan Multiplier"
+      - "  &7XP: &9x{clan_xp_multiplier}"
+      - "  &7Money: &ex{clan_money_multiplier}"
+      - ""
+      - "&7Clan K/D: &a{clan_kills}&f/&c{clan_deaths} &7({clan_kdr}) ⚔"
+      - ""
+      - "&7Clan type: {clan_type}"
+      - "&7Clan PVP: {clan_pvp}"
+      - ""
+      - "&7Created: &b{clan_created} ⌛"
+
+  clan-members:
+    name: "&eClan Members"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjEwMmJhYzZmYjYyMzQ3ZjE1NWJmMTIyZmMzZWVjMDI3MDhmMzQxOTdhNDU5M2Q2NmM4ODc5NDYzNDRjNzA0YyJ9fX0"
+    slot: 4
+    lore:
+      - ""
+      - "&7Members: &b{clan_members}&f/{clan_members_max}"
+      - "&7Officers: &e{clan_officers}"
+      - ""
+      - "&7Online: &a{clan_online}"
+      - ""
+
+  clan-position:
+    name: "&ePosition in the leaderboard"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWQyZmYwOWNmNmU3OTNjYTg4NzFiNDYwNzBkMWE1ODJmZGMxNmU3YjlmYmE2N2QzYzA4ZjE1YzZlNDdlYjY0NSJ9fX0"
+    slot: 5
+    lore:
+      - ""
+      - "&7By level: &9{clan_pos_level} ⭐"
+      - "&7By coins: &6{clan_pos_coins} ⛃"
+      - "&7By kills: &c{clan_pos_kills} ☠"
+      - ""
+
+  clan-bases:
+    name: "&eClan Bases"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0"
+    slot: 26
+    lore:
+      - ""
+      - "&7Bases: &a{clan_bases}&7/{clan_bases_max}"
+      - ""
+      - "&a> Click to open the menu"
+    click:
+      left: OPEN_CLAN_BASES_MENU
+      right: OPEN_CLAN_BASES_MENU
+
+  clan-storage:
+    name: "&eClan Storage"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTMxYzU0ZmY2MjUzNTc1MGJmM2EwY2QxNWJkZjg0OGRlOGQ4M2RhMTY2NGFiOTFhY2ZkNmRlYzYxNzU1MjQzOSJ9fX0"
+    slot: 35
+    lore:
+      - ""
+      - "&a> Click to open the menu"
+    click:
+      left: OPEN_CLAN_STORAGE
+      right: OPEN_CLAN_STORAGE
+
+  sort-players:
+    name: "&eSort"
+    item: OAK_SIGN
+    slot: 49
+    lore:
+      - ""
+      - "&a> Left click to sort by: {sort}"
+      - "&c> Right click to reset the sort"
+    click:
+      left: SORT_PLAYERS
+      right: SORT_RESET
+
+  # Don't change anything here, and don't add anything! You can only change the slot and the item.
+  p-back:
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWExZWYzOThhMTdmMWFmNzQ3NzAxNDUxN2Y3ZjE0MWQ4ODZkZjQxYTMyYzczOGNjOGE4M2ZiNTAyOTdiZDkyMSJ9fX0"
+    slot: 48
+
+  p-forward:
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYWM5YzY3YTlmMTY4NWNkMWRhNDNlODQxZmU3ZWJiMTdmNmFmNmVhMTJhN2UxZjI3MjJmNWU3ZjA4OThkYjlmMyJ9fX0"
+    slot: 50

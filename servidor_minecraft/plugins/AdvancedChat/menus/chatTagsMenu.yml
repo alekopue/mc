@@ -1,0 +1,108 @@
+# Chat Tags Configuration
+name: "&9Tags:"
+size: 54
+
+# Should locked tags be shown in the menu?
+showLockedTags: true
+
+# Should a space be automatically added before a tag in chat?
+# When true, e.g. format: "[Member] playerName [tag]"
+# When false, e.g. format: "[Member] playerName[tag]"
+addSpaceBeforeTag: true
+# Should a space be automatically added after a tag in chat?
+# When true, e.g. format: "[tag] text message"
+# When false, e.g. format: "[tag]text message"
+addSpaceAfterTag: false
+
+items:
+  filler:
+    type: BLACK_STAINED_GLASS_PANE
+    name: ' '
+  '49':
+    type: PAPER
+    name: '&cReinicia tu tag.'
+    action: RESET_TAG
+  '53':
+    type: OAK_DOOR
+    name: '&cCerrar menu'
+    action: CLOSE
+
+settings:
+  # Slots in which colors can be displayed
+  tagSlots: 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34
+  tagItem:
+    name: "%tag%"
+    lore:
+      - '&7Click para habilitarlo.'
+  noPermissionItem:
+    name: "%tag% <white> Tag"
+    lore:
+      - '&cNo tienes permiso para usar este tag.'
+      - '&7Puedes obtenerlo consiguiendo el rango o comprandolo cosmeticos en: &bTienda RevianMC!'
+
+  tags: # Permissions are: advancedchat.tag.<tag> e.g. advancedchat.tag.mvp
+    peru:
+      format: "<b><color:#ff1100>ᴘ</color></b><white><b>ᴇ</b></white><b><color:#ff1100>ʀ</color></b>"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRkMDNiZDQ0MTBiYWJkYzY4MjQ5M2IzYzJiYmEyNmU3MzBlNmJjNjU4ZDM4ODhlNzliZjcxMmY4NTMifX19
+    espana:
+      format: "&c&lᴇ&e&lѕ&c&lᴘ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMzJiZDQ1MjE5ODMzMDllMGFkNzZjMWVlMjk4NzQyODc5NTdlYzNkOTZmOGQ4ODkzMjRkYThjODg3ZTQ4NWVhOCJ9fX0=
+    mexico:
+      format: "&2&lᴍ&f&lᴇ&c&lx"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvY2E5NzFiZmNmMzNiNDM5ODIxYjRlNWYwYzg2Y2Q2MTQzNWNkM2UwYzgxOWUzNWRkOTc3NGVmMDM5OWYxMzJiIn19fQ==
+    aregentina:
+      format: "&b&lᴀ&f&lʀ&b&lɢ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjZkMDMzZGM1ZjY3NWFkNTFiYzA2YzdhMTk0OWMzNWExZDM3ZTQ4YTJlMWMyNzg5YzJjZjdkMzBlYzU4ZjMyYyJ9fX0=
+    colombia:
+      format: "&e&lᴄ&f&lᴏ&e&lʟ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYzcyMTIwYjlmZTc3ZDc3MGIyNTRiMzljN2JlOWIxY2VjY2VmNmFkZmU3YTVjYzY4OWFiMWZkMjNlM2MifX19
+    chile:
+      format: "&b&lᴄ&f&lʜ&b&lʟ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMTAzNTk0YzBjMTE2YjA1ZDc1NjA2MGEyMjM5ODM3NzQ3ODg4NzMyMjY5MzVkOTYyNzExYmMzZTI1ODQ2ZGM2YiJ9fX0=
+    ecuador:
+      format: "&6&lᴇ&f&lᴄ&6&lᴜ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzI4NjliNTVhNDAxYzg3ZmI5M2MzNmEyZDJlNzRlYTRkZDcyMjU0MmFiMGZjM2MwZGJmOTUxMTc3MzI1MTQ1NSJ9fX0=
+    bolivia:
+      format: "&2&lʙ&f&lᴏ&2&lʟ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZmQyYzlmOTg2MThjZDVmN2RiZjBjMWE1NGVlMDk0NzQ2NjJiNzEzYjVhYTI2NWM4NWVmYmZjNDY0MThlOTE1In19fQ==
+    paraguay:
+      format: "&d&lᴘ&f&lʀ&d&lʏ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvODE3OGRlNjkxYjUwOGQ2MjQ5MTA5ZmM1NGFmNmZiYTQ5YmFhODM3N2FkMzcwNjEyZWQ2MTdkNzdkZDZhZDU4OCJ9fX0=
+    uruguay:
+      format: "&3&lᴜ&f&lʀ&3&lʏ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzNmNjlmNjdhNjVmYjJlNmU4MGY3MDhiNTU5ZDIzYzVmNzY5YTFmNWE1NmMzYWQ2MTliY2NhODQ0ZmMyYmZkNSJ9fX0=
+    venezuela:
+      format: "&e&lᴠ&f&lᴇ&e&lɴ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZTMwMzMwNDliYWFlMTE4Nzc0MDZkYTQwYmQwNTE3Y2JmYjJiMzdhMjM5OGJlM2JkYTQ5OTViNjFmZmVhYTI0MyJ9fX0=
+    costarica:
+      format: "&9&lᴄ&f&lʀ&9&lɪ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNzkxNGVmNTI0MmRkMzRiZWJhZjlkZTVjZjE5OWViODg1NGZjZmY0ZjdjNTg2OWQyMzgyMzMxZDQwYjVlZWE3NCJ9fX0=
+    panama:
+      format: "&4&lᴘ&f&lᴀ&4&lɴ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjRiOGRhODNhODVmMTFlYjc0ZTc2MDg0YTZkNjQwODRhM2RkNWRhY2FhM2E5NzIxZTNhZjJjYWQ4OGVlZjcifX19
+    guatemala:
+      format: "&a&lɢ&f&lᴛ&a&lᴍ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGM1NTkyMzI4YTFlOGQzODljY2ZhZmQyN2M0Yjk5ZDhiMDMzM2Y1NzdhNzQzYjk1YjI3ZWNhNmQ3OTU5YWQ5ZCJ9fX0=
+    elsalvador:
+      format: "&1&lꜱ&f&lʟ&1&lᴠ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDk3ZmQ2MDgyMTAzNzA0ZGMzYzIwNWQyYmM1NTZlOTdhYmVhOGRlMWQ2MTk5NDRmMDhkMGJiY2FmYWVjZjEwYyJ9fX0=
+    honduras:
+      format: "&9&lʜ&f&lɴ&9&lᴅ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZWFjYWUxMmViYmJhMTBmNzRjMzM0NGUwZWJkOWE2MTlhZThhNWVhYjdmZTMyOTFhNzAxYzMwNTU0MTczMTJmNyJ9fX0=
+    nicaragua:
+      format: "&3&lɴ&f&lɪ&3&lᴄ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOGZmOWI5MGJmM2RmOTFhNDdjNzgyMTVhYWUxZDA3ZDU4OTk5YWEyMjlhMjU2M2VjM2UyODc1M2M0N2RmMTMwOSJ9fX0=
+    cuba:
+      format: "&c&lᴄ&f&lᴜ&c&lʙ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZDM5MzgyZGRkNDg0NWI0NjE5NmY1NDM0ZGU5ZTgyODdmOTI5NDcxZGFkNTczZGNiMDRmYjBmODU4NzIwMzA3YiJ9fX0=
+    puertorico:
+      format: "&d&lᴘ&f&lʀ&d&lɪ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvOTIzYzZmYmZkNTZmMGM4N2M2ZjJjYWZlYWY1OWU2ZWJiMjdiNGNkMjZkNmY3YzE1NzVkNzcwOWJmNDUyM2YxOSJ9fX0=
+    dominicana:
+      format: "&4&lᴅ&f&lᴏ&4&lᴍ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNWExODYwZGZjM2Q4YjczMDcxOTg5ODkzZGE1ZjZjZWI2MWRiOGJkZjUxN2JiZjczZTlhYzM2ZTllMTgyMTM1YiJ9fX0=
+    guineaecuatorial:
+      format: "&6&lɢ&f&lɴ&6&lQ"
+      head: eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMjQxZDdlYmVkNjI4YTExMzU0MDZiNWNkODIyMDM4YjRlM2ZiYjAxZjRjNTI4NTJhMDRjMzliMTg0ODg3NmQyIn19fQ==
+
+

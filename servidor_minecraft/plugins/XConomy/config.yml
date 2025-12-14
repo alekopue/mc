@@ -1,0 +1,127 @@
+#Por defecto: Online Offline SemiOnline
+#El modo por defecto detectará automáticamente el UUID del jugador (compatible con GeyserMC)
+#El modo Online es mejor para servidores que tienen activado el online-mode (compatible con Yggdrasil)
+#El modo Offline no admite ignorar mayúsculas/minúsculas en los nombres de usuario
+#Si usas Floodgate (GeyserMC) y la opción 'username-prefix' está vacía, por favor usa el modo SemiOnline
+UUID-mode: Default
+#En el modo de conversión, puedes usar el comando '/xconomy' para importar datos desde otros plugins basados en Vault
+#Los datos en conflicto serán omitidos. Los datos importados se guardarán en XConomy/importdata/data.yml
+#En este modo, XConomy no se iniciará normalmente
+#Después de la conversión, revisa los datos y desactiva este modo
+#La versión de Sponge no tiene esta función
+Importdata-mode: false
+
+
+#Configuraciones
+Settings:
+  #Chinese ChineseTW English French Spanish Russian Turkish Japanese German
+  #Indonesia Portuguese Italian
+  language: Spanish
+  #Si se debe comprobar si hay una nueva versión
+  check-update: true
+  #Intervalo de actualización del TOP10 y del total del servidor (en segundos)
+  refresh-time: 300
+  #Si se establece en true, XConomy registrará los siguientes comandos:
+    # - economy
+    # - eco
+    # - ebalancetop
+    # - ebaltop
+    # - eeconomy
+  #Ten en cuenta que si Essentials está instalado en tu servidor
+  #XConomy tomará el control de esos comandos.
+  eco-command: true
+  #XConomy deshabilitará la función económica de Essentials.
+  #Solo la función económica.
+  disable-essentials: true
+  #Saldo inicial
+  initial-bal: 1000
+  #Impuesto a pagar por el comando /pay (0.5 significa 50%, 1 significa 100%)
+  payment-tax: 0.1
+  #Tamaño del ranking (valor máximo 100)
+  ranking-size: 10
+  #Filas por página en las listas (Ranking y menú de ayuda)
+  lines-per-page: 5
+  #Si necesitas modificar los datos directamente en la base de datos, se recomienda activarlo
+  #El guardado asíncrono de datos no es compatible después de desactivar la caché
+  #Desactivar la caché aumentará la carga en la base de datos
+  disable-cache: false
+  #Guardar registros de transacciones
+  #Solo compatible con MySQL
+  transaction-record: true
+  #Registrar la información de transacciones del comando /pay mientras el jugador está desconectado.
+  #El jugador recibirá un aviso cuando vuelva a conectarse.
+  #Debe estar habilitada la función de registro de transacciones.
+  offline-pay-transfer-tips: false
+  #Ignorar mayúsculas/minúsculas en los nombres de jugador
+  username-ignore-case: false
+
+
+#Esto puede resolver el problema de algunos plugins que necesitan crear cuentas no asociadas a jugadores, como Factions
+#==========================================================================================
+#Plugins compatibles por defecto (no necesitan habilitar cuentas no asociadas a jugadores)
+#Towny
+#==========================================================================================
+#Los datos de las cuentas no asociadas a jugadores no se sincronizan con BC
+non-player-account:
+  #Si se deben habilitar las cuentas no asociadas a jugadores.
+  enable: false
+  #Si el nombre de la cuenta contiene campos en la lista blanca, será reconocido como cuenta no asociada a jugador.
+  #De lo contrario, será reconocido como cuenta de jugador.
+  #Si el nombre del jugador contiene campos de la lista blanca, se le denegará el acceso al servidor.
+  #Esta función puede reducir las veces que se leen datos desde la base de datos.
+  whitelist:
+    #Si se debe habilitar la lista blanca.
+    enable: false
+    fields-list:
+      - tax
+      - nation-
+
+
+#Visualización de la moneda
+Currency:
+  singular-name: $
+  plural-name: $
+  #Indica si el saldo es un número entero
+  integer-bal: false
+  #Método de redondeo para los dígitos sobrantes en las cantidades
+  #0 indica redondear hacia abajo, 1 indica redondear hacia arriba
+  rounding-mode: 0
+  thousands-separator: ','
+  #%format_balance% indica el saldo después del formato
+  display-format: '%balance% %currencyname%'
+  #Cantidad máxima (por defecto es el máximo)
+  max-number: '10000000000000000'
+  format-balance:
+    1000: k
+    1000000: m
+    1000000000: b
+    1000000000000: t
+    1000000000000000: q
+#Configuración de sincronización de datos
+SyncData:
+  #Si se debe habilitar la sincronización de datos entre múltiples servidores
+  enable: false
+  #BungeeCord Redis
+  #================================================== Canal BungeeCord ==================================================
+  #Después de activar la sincronización con BungeeCord, la consola y otros plugins no podrán modificar el saldo en el servidor sin jugadores
+  #Por favor, establece bungeecord en true en el archivo spigot.yml
+  #==================================================   Canal Redis   ==================================================
+  #Requiere dependencias de 'slf4j'
+  channel-type: BungeeCord
+  #ID del servidor; mantén el mismo ID y configuración MySQL entre los servidores que requieren sincronización
+  sign: aa
+
+
+#Configuración de hilos
+Thread:
+  #Establece el tiempo de espera para CompletableFuture
+  #La unidad es segundos
+  future-timeout: 3
+
+
+#Configuración de hilos por región (solo efectivo para servidores Folia)
+Region-Thread:
+  #Al ejecutar hilos sincronizados, se seleccionará una coordenada aleatoria dentro del rango especificado para ejecutarse.
+  world: world
+  range-x: 1024
+  range-y: 1024

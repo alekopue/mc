@@ -1,0 +1,45 @@
+[
+  {
+    "cid": 4368272358,
+    "name": "\u0026fRKR",
+    "orig_name": "RKR",
+    "leader": "RevRa3",
+    "level": 1,
+    "experience": 51,
+    "coins": 0,
+    "kills": 0,
+    "deaths": 0,
+    "created_at": "2025-08-31 06:06",
+    "settings": {
+      "private": false,
+      "pvp": false
+    },
+    "members": [
+      {
+        "player": "RevRa3",
+        "rank": 2,
+        "experience": 51,
+        "coins": 0,
+        "kills": 0,
+        "deaths": 0,
+        "joined": "2025-08-31 06:06",
+        "last_login": "2025-09-06 01:49",
+        "permissions": [
+          "clan.*"
+        ]
+      }
+    ],
+    "bases": [],
+    "perk": {
+      "members": 10,
+      "xp_multiplier": 0.5,
+      "money_multiplier": 0.5,
+      "bases": 1,
+      "tag": true,
+      "motd": false,
+      "storage": 7
+    },
+    "motd": [],
+    "storage": {}
+  }
+]

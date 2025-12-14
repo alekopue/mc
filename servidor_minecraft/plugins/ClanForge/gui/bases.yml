@@ -1,0 +1,35 @@
+title: '&eClan Bases'
+height: 3 # Recommended 3 :)
+fill-borders: true
+
+tp-to-base: "&aLeft Click to teleport to base"
+delete-base: "&cRight Click to delete the base"
+
+items:
+
+  base-action:
+    name: "&e{baseName}"
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNDM4Y2YzZjhlNTRhZmMzYjNmOTFkMjBhNDlmMzI0ZGNhMTQ4NjAwN2ZlNTQ1Mzk5MDU1NTI0YzE3OTQxZjRkYyJ9fX0"
+    slot: BACKGROUND # Don't change this
+    click:
+      left: TP_TO_BASE
+      right: DELETE_BASE
+
+  accessible-slot:
+    name: "&aAccessible slot"
+    item: GREEN_STAINED_GLASS_PANE
+
+  not-available-slot:
+    name: "&cNot available slot"
+    item: RED_STAINED_GLASS_PANE
+    lore:
+      - ""
+      - "&7Upgrade the clan perk"
+      - "&7to gain an additional slot."
+  back:
+    name: '&c<- Go Back'
+    item: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMWExZWYzOThhMTdmMWFmNzQ3NzAxNDUxN2Y3ZjE0MWQ4ODZkZjQxYTMyYzczOGNjOGE4M2ZiNTAyOTdiZDkyMSJ9fX0"
+    slot: 22
+    click:
+      left: BACK
+      right: BACK
